@@ -1,0 +1,37 @@
+//* Se definen los colores principales
+$primary-color: #F1753F;
+$secondary-color: #F6F6F6;
+$background-color: #373737;
+
+//* Se define los colores del esquema
+$accent-color: (
+  200: #ff9131,
+  500: #F1753F,
+  700: #474545,
+  contrast: (
+    200: #F6F6F6,
+    700: #373737
+  )
+);
+
+$warn-color: (
+  500: #F1753F,
+  700: #fc2a00,
+  contrast: (
+    200: #ffffff,
+    700: #000000
+  )
+);
+
+//* Se aplican los colores principales de Bootstrap
+$theme-colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "background": $background-color
+);
+
+//! Se aplican los colores del esquema de Bootstrap
+$theme-colors: map-merge($theme-colors, (
+  "accent": $accent-color,
+  "warn": $warn-color
+));
