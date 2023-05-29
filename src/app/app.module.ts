@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './componentes/nav/nav.component';
 import { AvatarsComponent } from './componentes/avatars/avatars.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-import { SliderComponent } from './componentes/slider/slider.component';
 import { SliderHorizontalComponent } from './componentes/slider/slider-horizontal/slider-horizontal.component';
 import { SliderPrincipalComponent } from './componentes/slider/slider-principal/slider-principal.component';
 import { SliderVerticalComponent } from './componentes/slider/slider-vertical/slider-vertical.component';
@@ -33,7 +32,6 @@ import { GenerosComponent } from './subpaginas/generos/generos.component';
     NavComponent,
     AvatarsComponent,
     FooterComponent,
-    SliderComponent,
     SliderHorizontalComponent,
     SliderPrincipalComponent,
     SliderVerticalComponent,
