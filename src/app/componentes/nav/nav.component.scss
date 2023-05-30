@@ -1,13 +1,60 @@
-.parent {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  }
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:'Montserrat', sans-serif;
+  font-size:16px;
+  color: #f6f6f6;}
   
-  .hamburger { grid-area: 1 / 1 / 2 / 2; }
-  .home-top5-explora { grid-area: 1 / 2 / 2 / 5; }
-  .cinbit { grid-area: 1 / 6 / 2 / 7; }
-  .lupa-estrella-avatar { grid-area: 1 / 8 / 2 / 11; }
+header {
+  background-color: #f1743F;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.left-section, .middle-section, .right-section {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon, .search-icon, .star-icon, .avatar-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+h1 {
+   position: absolute;
+  }
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.right-section {
+  display: flex;
+}
+
+.iconNav {
+  margin: 20px;
+  font-size: 2rem;
+}
+h1 {
+  font-family: 'Montserrat-Alt1', sans-serif;
+
+ }
