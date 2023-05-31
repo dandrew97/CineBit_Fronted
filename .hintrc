@@ -2,6 +2,27 @@
   "extends": [
     "development"
   ],
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not ios_saf <= 16.4",
+    "not safari <= 16.4"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "print-color-adjust"
+        ]
+      }
+    ]
+  }
+}
+{
+  "extends": [
+    "development"
+  ],
   "hints": {
     "no-protocol-relative-urls": "off",
     "axe/name-role-value": "off",

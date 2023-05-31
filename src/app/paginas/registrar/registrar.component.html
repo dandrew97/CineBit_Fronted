@@ -72,5 +72,38 @@
         </section>
     <script type="text/javascript" src="/Src/Mainjs/Registrar.js"></script>
 </body>
+<nav>
+  <!--* Por facilidad y agilidad de desarrollo el SideBar fue creado como un componente externo -->
+  <!--TODO Sidebar -->
+  <section class="sideBar">
+      <!--? Checkbox para activar/desactivar el sidebar -->
+      <a type="submit" class="hamburgerCheckbox">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="background: color: #00000"
+              class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+      </a>
+      <div class="sideBarContent">
+          <!--? Contenido del menú -->
+      </div>
+  </section>
+  <!--* Fin del componente externo -->
 
-</html>
+  <!--TODO Menú para las tres páginas principales -->
+  <section class="menuPagesPrincipales">
+      <div class="pagesPrincipales__item-Home">
+          <a href="#" class="__item nav-link active" aria-current="page">Home</a> <!--? Enlace a la página Home (activa) -->
+      </div>
+      <div class="pagesPrincipales__item-Top5">
+          <a href="#" class="__item nav-link active">Top5</a> <!--? Enlace a la página Top5 (activa) -->
+      </div>
+      <div class="pagesPrincipales__item-Explora">
+          <a href="#" class="__item nav-link active">Explora</a> <!--? Enlace a la página Explora (activa) -->
+      </div>
+  </section>
+
+  <!--TODO Logo principal -->
+  <section class="logo">
+      <a href="#" class="__item nav-link active" aria-current="page">CINBIT</a>   <!--? Enlace al inicio del sitio CINBIT -->
+  </section>
