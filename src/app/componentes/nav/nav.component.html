@@ -1,33 +1,153 @@
 <header>
   <div class="left-section">
-    <div class="iconNav bi bi-list"></div>
+    <div class="navbar-menu">
+      <!--? Botón del menú hamburguesa -->
+      <a
+        class="btn btnHamburger"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling"
+      >
+        <i class="iconNav bi bi-list"></i>
+      </a>
+
+      <!--? Offcanvas para el menú -->
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        data-bs-backdrop="false"
+        tabindex="-1"
+        id="offcanvasScrolling"
+        aria-labelledby="offcanvasScrollingLabel"
+      >
+        <div class="offcanvas-body">
+          <!--? Botón para cerrar el offcanvas -->
+          <button
+            type="button"
+            class="iconNav btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+
+          <!--? Sección del avatar y nombre -->
+          <section class="navBarSectionAvatar">
+            <img
+              class="imgAvatar"
+              height="150px"
+              width="150px"
+              src="../../../assets/imgTemplates/avatar-svgrepo-com.svg"
+              alt="Hola + nombre"
+            />
+            <p>¡Hola .name!</p>
+          </section>
+
+          <!--? Sección de contenido del menú -->
+          <section class="navBarSectionContenido">
+            <div class="divNavBarSection">
+              <h5 href="peliculas">Películas</h5>
+              <h5 href="series">Series</h5>
+              <h5 href="cartoons">Cartoons</h5>
+              <h5 href="documentales">Documentales</h5>
+            </div>
+            <div class="divNavBarSectionOtros">
+              <h5 href="generos">Géneros<i class="iconNav bi bi-film"></i></h5>
+              <h5 href="colecciones">
+                Colecciones<i class="iconNav bi bi-collection-play-fill"></i>
+              </h5>
+            </div>
+          </section>
+
+          <!--? Sección de favoritos -->
+          <section class="navBarSectionFavoritos">
+            <i href="favoritos" class="iconNavStar bi bi-star-fill"></i>
+          </section>
+
+          <!--? Sección del perfil -->
+          <section class="navBarSectionPerfil">
+            <p href="perfil">
+              Mi perfil <i class="iconNav bi bi-chevron-right"></i>
+            </p>
+            <p href="registrar">
+              Crear perfil <i class="iconNav bi bi-plus"></i>
+            </p>
+            <p href="inicio">
+              Cerrar sesión <i class="iconNav bi bi-chevron-left"></i>
+            </p>
+          </section>
+
+          <!--? Sección de acerca de -->
+          <section class="navBarSectionAcercade">
+            <p url="https://github.com/dandrew97/CineBit_Fronted.git">
+              Acerca de CineBit<i
+                class="iconNavSection5 bi bi-info-circle-fill"
+              ></i>
+            </p>
+            <p url="https://github.com/StivenTorres17/CineBit-Backend.git">
+              Contactanos
+            </p>
+            <p>CineBit<i class="iconNavSection5 bi bi-cc-circle"></i></p>
+          </section>
+        </div>
+      </div>
+    </div>
     <nav>
       <ul>
-        <li><a href="#"><i class="iconNav fa-solid fa-house"></i>Home</a></li>
-        <li><a href="#"><i class="iconNav fa-solid fa-ranking-star"></i>Top 5</a></li>
-        <li><a href="#"><i class="iconNav bi bi-shuffle"></i>Explora</a></li>
+        <li>
+          <a href="home" aria-current="page"
+            ><i class="iconNav fa-solid fa-house"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href="top5"
+            ><i class="iconNav fa-solid fa-ranking-star"></i>Top 5</a
+          >
+        </li>
+        <li>
+          <a href="explora"><i class="iconNav bi bi-shuffle"></i>Explora</a>
+        </li>
       </ul>
     </nav>
   </div>
   <div class="middle-section">
-    <h1>CINBIT</h1>
+    <h1 href="home" aria-current="page">CINBIT</h1>
   </div>
   <div class="right-section">
-    <div class="iconNav bi bi-search"></div>
-    <div class="iconNav bi bi-star-fill"></div>
-    <div class="iconNav bi bi-person-square"></div>
+    <!--? Input de búsqueda -->
+    <div class="input-wrapper">
+      <label class="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          height="25px"
+          width="25px"
+        >
+          <path
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="1.5"
+            stroke="#fff"
+            d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+          ></path>
+          <path
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="1.5"
+            stroke="#fff"
+            d="M22 22L20 20"
+          ></path>
+        </svg>
+      </label>
+      <input placeholder="Roboco.." class="input" name="text" type="text" />
+    </div>
+    <div href="favoritos" class="iconNav bi bi-star-fill"></div>
+    <img
+      class="imgAvatar"
+      height="25px"
+      width="25px"
+      src="../../../assets/imgTemplates/avatar-svgrepo-com.svg"
+      alt="Hola + nombre"
+    />
   </div>
 </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
