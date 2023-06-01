@@ -1,55 +1,66 @@
-<div class="parent">
-    <div class="hamburger"><i class="bi bi-list"></i> </div>
-    <div class="home-top5-explora">
-     Home  <i class="iconnav fa-solid fa-house"></i>
-     Top5 <i class="iconnav fa-solid fa-ranking-star"></i>
-     Explora <i class="icon nav bi bi-shuffle"></i>
-    </div>
-    <div class="cinbit">CINBIT</div>
-    <div class="lupa-estrella-avatar">
-        <i class="iconnav bi bi-search"></i>
-        <i class="iconnav bi bi-star-fill"></i>
-        <i class="iconnav bi bi-person-square"></i>
-    </div>
-    </div>
+<section class="Contenedor">
+    <app-nav></app-nav>
 
-    <a class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-    aria-controls="offcanvasScrolling"><i class="bi bi-list"></i></a>
+    <app-slider-principal></app-slider-principal>
+    <app-slider-horizontal></app-slider-horizontal>
 
-<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-        <section class="navBarSection">
-            <img class="imgAvatar" height="100px" width="100px" src="../../../assets/imgTemplates/avatar-svgrepo-com.svg" alt="Hola + nombre">
-            <p class="nameUserNavBar">.name</p>
-        </section>
-        <section class="navBarSection">
-            <div class="divNavBarSection">
-                <h5>Películas</h5>
-                <h5>Series</h5>
-                <h5>Cartoons</h5>
-                <h5>Documentales</h5>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <div class="container">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <img src="../../../assets/img/device_car_eng.webp" alt="Imagen" class="img-fluid" width="300"
+                            height="200">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <p>Cuando quieras, donde quieras
+                            <br>
+
+                            Disfrútalo en tu pantalla favorita, ya sea tu TV, tableta, computadora,
+                            teléfono y otros. Vive una experiencia única con una amplia selección
+                            Además, puedes ver en cuatro pantallas en simultáneo para que nadie se quede afuera.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="divNavBarSection">
-                <h5>Géneros</h5><i class="bi bi-film"></i>
-                <h5>Colecciones</h5>
-                <h5>Continuar viendo</h5>
-            </div>
-        </section>
-        <section class="navBarSection">
-
-        </section>
-        <section class="navBarSection">
-
-        </section>
-        <section class="navBarSection">
-
-        </section>
+        </div>
     </div>
-
-</div>
-
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="text-center">
+                    <img src="../../../assets/img/perfil falso.jpeg" alt="Imagen" style="width: 300px; height: 200px;">
+                </div>
+            </div>
+          
+            <div class="col-sm-6">
+                <div class="text-center">
+                    <h3>PERFIL FALSO</h3>
+                    <p>“Fake Profile” gira en torno a Camila, una mujer que conoce al hombre de sus sueños a través de
+                        una aplicación de citas. Sin embargo, cuando viaja a su ciudad para sorprenderlo, descubre que todo era mentira</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="profile-image" style="margin-bottom: 20px; margin-right: 20px;">
+                            <img src="../../../assets/img/Carolina Miranda.jpeg" alt="Imagen de perfil" class="rounded-circle" style="width: 50px; height: 50px;">
+                            <h5>Carolina<br>Miranda</h5>
+                        </div>
+                        <div class="profile-image" style="margin-bottom: 20px; margin-right: 20px;">
+                            <img src="../../../assets/img/Rodolfo Salas.jpeg" alt="Imagen de perfil" class="rounded-circle" style="width: 50px; height: 50px;">
+                            <h5>Rodolfo<br>salas</h5>
+                        </div>
+                        <div class="profile-image" style="margin-bottom: 20px; margin-right: 20px;">
+                            <img src="../../../assets/img/Lincoln Palomeque.jpeg" alt="Imagen de perfil" class="rounded-circle" style="width: 50px; height: 50px;">
+                            <h5>Lincoln<br>Palomeque</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+    <app-footer></app-footer>
+</section>
