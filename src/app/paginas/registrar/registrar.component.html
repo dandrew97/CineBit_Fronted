@@ -1,109 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
+<section class="contentForm">
+  <div class="contentChildren">
+    <!--? Div 1 -->
+    <div class="div1">
+      <title>Crea tu cuenta</title>
+      <p>Accede a una inmensidad de maravilloso contenido</p>
+    </div>
 
-<head>
-    <script src="../assets/js/color-modes.js"></script>
+    <!--? Div 2: Campo de entrada para el apodo -->
+    <div class="div2">
+      <mat-form-field class="example-full-width">
+        <mat-label>Apodo</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </div>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.111.3">
-    <title>Cine-Bit/registrar</title>
-    <link rel="stylesheet" href="/Assest/Librerias/Bootstrap/sign-in/sign-in.css">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
-    <link href="/Src/Stylescss/Registrar.css" rel="stylesheet">
-    <style>
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-    <link href=" ">
-</head>
+    <!--? Div 3: Campo de entrada para el nombre -->
+    <div class="div3">
+      <mat-form-field class="example-full-width">
+        <mat-label>Nombre</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </div>
 
-<body>
-        <section class="Principal">
-            <main class="form-signin w-100 m-auto">
-                <form id="Formulario" class="Formulario">
-                    <img class="Logo mb-4" src="/Assest/Img/Isotipo.png" alt="Cine-Bit" width="110px" height="110px">
-                    <h1 class="Titulo h3 mb-3 fw-normal">Registrate</h1>
-                    <p class="Form-p">Porfavor completa los siguientes campos</p>
+    <!--? Div 4: Campo de entrada para los apellidos -->
+    <div class="div4">
+      <mat-form-field class="example-full-width">
+        <mat-label>Apellidos</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </div>
 
-                    <div class="inputs">
-                        <label class="label" for="floatingName">Nombre</label>
-                        <input required type="text" class="form-control" id="floatingName" placeholder="nombre">
-                    </div>
-                    <div class="inputs">
-                        <label class="label" for="floatingLastName">Apellidos</label>
-                        <input required type="text" class="form-control" id="floatingLastName" placeholder="Apellidos">
-                    </div>
-                    <div class="inputs">
-                        <label class="label" for="floatingEmail">Email</label>
-                        <input required type="email" class="form-control" id="floatingEmail"
-                            placeholder="nombre@correo.com">
-                    </div>
-                    <div class="inputs">
-                        <label class="label" for="floatingPassword">Contraseña</label>
-                        <input required type="password" class="form-control" id="floatingPassword"
-                            placeholder="Contraseña">
-                    </div>
-                    <div class="checkbox mb-3">
-                        <label class="checkbox-input">
-                            <input type="checkbox" value="remember-me"> Acepto los terminos y condiciones
-                        </label>
-                    </div>
-                    <!-- botones -->
-                    <div class="botones">
-                        <div class="boton">
-                            <button class="btn Iniciar" type="submit">Registrarme</button>
-                        </div>
-                        <div class="boton">
-                            <a class="btn" href="/index.html">Tengo cuenta</a>
-                        </div>
-                    </div>
-                        <div class="div-copy">
-                            <p class="copy mt-5 mb-3 text-body-secondary">&copy; Cine-Bit</p>
-                        </div>
-                </form>
-            </main>
-        </section>
-    <script type="text/javascript" src="/Src/Mainjs/Registrar.js"></script>
-</body>
-<nav>
-  <!--* Por facilidad y agilidad de desarrollo el SideBar fue creado como un componente externo -->
-  <!--TODO Sidebar -->
-  <section class="sideBar">
-      <!--? Checkbox para activar/desactivar el sidebar -->
-      <a type="submit" class="hamburgerCheckbox">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="background: color: #00000"
-              class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-          </svg>
-      </a>
-      <div class="sideBarContent">
-          <!--? Contenido del menú -->
-      </div>
-  </section>
-  <!--* Fin del componente externo -->
+    <!--? Div 5: Campo de entrada para el correo electrónico -->
+    <div class="div5">
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput [formControl]="emailFormControl" placeholder="Ej. pedro@ejemplo.com">
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Por favor ingrese un Email válido
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          El Email es <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
 
-  <!--TODO Menú para las tres páginas principales -->
-  <section class="menuPagesPrincipales">
-      <div class="pagesPrincipales__item-Home">
-          <a href="#" class="__item nav-link active" aria-current="page">Home</a> <!--? Enlace a la página Home (activa) -->
-      </div>
-      <div class="pagesPrincipales__item-Top5">
-          <a href="#" class="__item nav-link active">Top5</a> <!--? Enlace a la página Top5 (activa) -->
-      </div>
-      <div class="pagesPrincipales__item-Explora">
-          <a href="#" class="__item nav-link active">Explora</a> <!--? Enlace a la página Explora (activa) -->
-      </div>
-  </section>
+    <!--? Div 6: Campo de entrada para la contraseña -->
+    <div class="div6">
+      <mat-form-field>
+        <mat-label>Ingresa tu contraseña</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide">
+          <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
 
-  <!--TODO Logo principal -->
-  <section class="logo">
-      <a href="#" class="__item nav-link active" aria-current="page">CINBIT</a>   <!--? Enlace al inicio del sitio CINBIT -->
-  </section>
+    <!--? Div 7: Campo de entrada para el teléfono/móvil -->
+    <div class="div7">
+      <mat-form-field class="example-full-width">
+        <mat-label>Teléfono/Móvil</mat-label>
+        <input type="tel" matInput placeholder="322-360-4914">
+        <mat-icon matSuffix>mode_edit</mat-icon>
+      </mat-form-field>
+    </div>
+
+    <!--? Div 8: Selector para el tipo de perfil -->
+    <div class="div8">
+      <mat-form-field>
+        <mat-label>Qué tipo de perfil prefieres</mat-label>
+        <mat-select>
+          <mat-option value="one">Perfil para adulto</mat-option>
+          <mat-option value="two">Perfil para niño</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <!--? Div 9: Campo de entrada para frutas favoritas utilizando mat-chip -->
+    <div class="div9">
+      <mat-label>Favorite Fruits</mat-label>
+      <mat-chip-grid #chipGrid aria-label="Enter fruits">
+        <!--? Iterar sobre la lista de frutas y mostrar los chips -->
+        <mat-chip-row *ngFor="let fruit of fruits"
+                      (removed)="remove(fruit)"
+                      [editable]="true"
+                      (edited)="edit(fruit, $event)"
+                      [aria-description]="'press enter to edit ' + fruit.name">
+          {{fruit.name}}
+          <button matChipRemove [attr.aria-label]="'remove ' + fruit.name">
+            <mat-icon><i class="bi bi-x"></i></mat-icon>
+          </button>
+        </mat-chip-row>
+
+        <!--? Campo de entrada para agregar nuevas frutas -->
+        <input placeholder="New fruit..."
+               [matChipInputFor]="chipGrid"
+               [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+               [matChipInputAddOnBlur]="addOnBlur"
+               (matChipInputTokenEnd)="add($event)"/>
+      </mat-chip-grid>
+    </div>
+
+    <!--? Div 10 -->
+    <div class="div10">
+      <p>Al hacer clic en Crear cuenta, confirmas que aceptas los Términos de Uso y reconoces que has leído y aceptado nuestra Política de Privacidad. Además, reconoces que te enviaremos ofertas de marketing, promociones y otras ofertas de CineBit y sus Afiliadas por e-mail, redes sociales y otros canales. Si creas un Perfil Infantil, aceptas el procesamiento de la información personal recopilada a través de ese perfil de acuerdo a la Política de Privacidad, si dicho consentimiento es requerido por tús tutores legales.</p>
+    </div>
+
+    <!--? Div 11: Botón para crear cuenta -->
+    <div class="div11">
+      <button>Crear cuenta</button>
+    </div>
+  </div>
+</section>
