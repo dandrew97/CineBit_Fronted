@@ -1,9 +1,9 @@
-/* Estilos generales para todos los elementos */
+/*//? Estilos generales para todos los elementos */
 * {
   border-radius: 15px;
 }
 
-/* Estilos para el carrusel de imágenes */
+/*//? Estilos para el carrusel de imágenes */
 section {
   margin: auto;
   display: flex;
@@ -35,7 +35,7 @@ h2 {
   color: #f0f0f0;
 }
 
-/* Estilos para las cards */
+/*//? Estilos para las cards */
 .container {
   display: flex;
   justify-content: center;
@@ -76,7 +76,7 @@ h2 {
   text-align: center;
 }
 
-/* Estilos para pantallas pequeñas */
+/*//? Estilos para pantallas pequeñas */
 @media (max-width: 600px) {
   .section {
     flex-basis: 100%;
@@ -84,7 +84,7 @@ h2 {
   }
 }
 
-/* Estilos específicos para la clase "color" fondo pagina */
+/*//? Estilos específicos para la clase "color" fondo pagina */
 .color {
   background: #01042d;
 }

@@ -1,9 +1,11 @@
+/*//? Estilos para la sección de video de Netflix */
 .netflix-home-video{
     width: 100%;
     z-index: 10;
     position: relative;
 }
 
+/*//? Estilos para el divisor superior */
 .netflix-home-video .top{
     position: absolute;
     top: 0%;
@@ -12,6 +14,7 @@
     background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(0, 0, 0));
 }
 
+/*//? Estilos para el divisor inferior */
 .netflix-home-video .bottom{
     position: absolute;
     bottom: 0%;
@@ -19,31 +22,39 @@
     height: 30px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #141414);
 }
+
+/*//? Estilos para el elemento de video */
 .netflix-home-video video{
     width: 100%;
 }
 
-
+/*//? Estilos para el contenido superpuesto en el video */
 .netflix-home-video .content{
     position: absolute;
     top: 0%;
     width: 100%;
-    /* background-color: #fff; */
     z-index: 100;
     display: flex;
 }
 
+/*//? Estilos para el contenido izquierdo */
 .netflix-home-video .content .left{
     margin-left: 80px;
 }
+
+/*//? Estilos para la imagen en el contenido izquierdo */
 .netflix-home-video .content .left img{
    margin-top: 400px;
    width: 250px;
 }
+
+/*//? Estilos para el párrafo en el contenido izquierdo */
 .netflix-home-video .content .left p{
     color: aliceblue;
     font-size: 16px;
- }
+}
+
+/*//? Estilos para el contenido derecho */
 .netflix-home-video .content .right{
     width: 50%;
 }

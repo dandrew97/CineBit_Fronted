@@ -2,10 +2,12 @@
   background: #030f42;
   color: #cdcdcd;
 }
+/*//? Establece el fondo y el color de texto para el contenedor principal */
 
 h2 {
   margin-top: 30px;
 }
+/*//? Agrega un margen superior de 30px al elemento h2 */
 
 .container,
 col-6 {
@@ -13,39 +15,39 @@ col-6 {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-
 }
+/*//? Establece la visualización de los elementos con clase .container y col-6 como flex, centra los elementos horizontal y verticalmente, y agrega un margen superior de 30px */
 
 .text-center {
   margin: 30px;
   text-align: center;
 }
-
+/*//? Establece un margen de 30px y alinea el texto al centro horizontalmente para los elementos con clase .text-center */
 
 .text-center2 {
   padding: 20px;
   margin: 10px;
   text-align: center;
 }
+/*//? Establece un relleno de 20px, un margen de 10px y alinea el texto al centro horizontalmente para los elementos con clase .text-center2 */
 
 .img_perfil {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+/*//? Establece la visualización de los elementos con clase .img_perfil como flex y los centra horizontal y verticalmente */
 
 .video {
   margin-top: 70px;
-
 }
-
-/*===================================================*/
+/*//? Agrega un margen superior de 70px al elemento con clase .video */
 
 * {
   margin: 0;
   padding: 0;
 }
+/*//? Elimina el margen y el relleno predeterminados para todos los elementos */
 
 .header {
   position: fixed;
@@ -59,6 +61,7 @@ col-6 {
   justify-content: space-between;
   padding: 20px;
 }
+/*//? Establece el encabezado con posición fija en la parte superior, un fondo degradado, y alinea los elementos horizontalmente y verticalmente con un espacio uniforme entre ellos */
 
 .title {
   font-family: 'Montserrat', sans-serif;
@@ -66,10 +69,12 @@ col-6 {
   color: #ffffff;
   margin-left: 10px;
 }
+/*//? Establece el estilo de fuente, tamaño y color para el elemento con clase .title, y agrega un margen izquierdo de 10px */
 
 .buttons {
   margin-right: 10px;
 }
+/*//? Agrega un margen derecho de 10px al elemento con clase .buttons */
 
 .buttons button {
   margin-left: 10px;
@@ -82,6 +87,7 @@ col-6 {
   border-radius: 4px;
   cursor: pointer;
 }
+/*//? Establece el estilo de los botones dentro del elemento con clase .buttons, incluyendo margen izquierdo, relleno, fuente, tamaño, color, fondo degradado, bordes redondeados y cursor de puntero */
 
 @media only screen and (max-width: 600px) {
   .title {
@@ -92,23 +98,25 @@ col-6 {
     font-size: 10px;
   }
 }
+/*//? Aplica estilos específicos cuando el ancho de la pantalla es de 600px o menos, como cambiar el tamaño de la fuente para el elemento con clase .title y los botones dentro del elemento con clase .buttons */
 
-/*    ===========================================*/
 h2 {
-
   font-size: 20px;
 }
+/*//? Establece el tamaño de fuente de 20px para todos los elementos h2 */
 
 .image-container {
   display: inline-block;
   position: relative;
 }
+/*//? Establece la visualización de los elementos con clase .image-container como inline-block y establece su posición como relativa */
 
 .image-container img {
   width: 100%;
   height: auto;
   display: block;
 }
+/*//? Establece el ancho al 100% y la altura automática para las imágenes dentro de los elementos con clase .image-container, y establece su visualización como bloque */
 
 .image-container::before {
   content: '';
@@ -121,16 +129,18 @@ h2 {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
+/*//? Crea un pseudo-elemento antes de los elementos con clase .image-container, lo posiciona absolutamente en la parte superior izquierda, establece su tamaño y color de fondo, y establece la opacidad en 0 con una transición suave */
 
 .image-container:hover::before {
   opacity: 1;
 }
-
+/*//? Al hacer hover en los elementos con clase .image-container, cambia la opacidad del pseudo-elemento a 1 */
 
 body {
   display: flex;
   justify-content: center;
 }
+/*//? Establece la visualización del cuerpo del documento como flex y lo centra horizontalmente */
 
 .container {
   display: flex;
@@ -139,26 +149,30 @@ body {
   max-width: 100%;
   margin-top: 50px;
 }
+/*//? Establece la visualización de los elementos con clase .container como flex, envuelve los elementos en varias líneas, los centra horizontalmente, establece su ancho máximo al 100% y agrega un margen superior de 50px */
 
 .card {
   flex-basis: 20%;
   margin: 10px;
   text-align: center;
 }
+/*//? Establece el tamaño base flexible de los elementos con clase .card como el 20% del contenedor principal, agrega un margen de 10px y alinea el texto al centro horizontalmente */
 
 .card img {
   max-width: 100%;
   height: auto;
   transition: transform 0.3s;
-  /* Agrega una transición suave */
+  /*//? Agrega una transición suave */
 }
+/*//? Establece el ancho máximo de las imágenes dentro de los elementos con clase .card como 100%, la altura automática y agrega una transición suave para transformaciones */
 
 .card img:hover {
   transform: scale(1.1);
-  /* Agranda la imagen al hacer hover */
+  /*//? Agranda la imagen al hacer hover */
 }
+/*//? Al hacer hover en las imágenes dentro de los elementos con clase .card, agranda la imagen utilizando la transformación de escala */
 
-/* Estilos específicos para cada tarjeta */
+/*//? Estilos específicos para cada tarjeta */
 .card.small {
   flex-basis: 11%;
 }
@@ -171,7 +185,7 @@ body {
   flex-basis: 13%;
 }
 
-/* Estilos responsivos */
+/*//? Estilos responsivos */
 @media (max-width: 768px) {
   .card {
     flex-basis: 30%;
