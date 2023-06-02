@@ -7,6 +7,8 @@ import { MatSelectModule } from '@angular/material/select'; //TODO Importación 
 import { ReactiveFormsModule } from '@angular/forms'; //TODO Importación del módulo ReactiveFormsModule para trabajar con formularios reactivos
 import { MatIconModule } from '@angular/material/icon'; //TODO Importación del módulo MatIconModule para utilizar iconos de Material
 import { MatChipsModule } from '@angular/material/chips'; //TODO Importación del módulo MatChipsModule para utilizar chips de Material
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { AppRoutingModule } from './app-routing.module'; //TODO Importación del módulo AppRoutingModule para las rutas de la aplicación
 import { AppComponent } from './app.component'; //TODO Importación del componente principal AppComponent
@@ -68,7 +70,9 @@ import { GenerosComponent } from './subpaginas/generos/generos.component'; //TOD
     MatSelectModule,
     ReactiveFormsModule,
     MatIconModule,
-    MatChipsModule
+    MatChipsModule,
+    MatCardModule,
+    MatCheckboxModule
   ],
   providers: [], //TODO Proveedores de servicios
   bootstrap: [AppComponent] //TODO Componente raíz de la aplicación
