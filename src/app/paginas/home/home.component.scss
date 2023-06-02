@@ -1,3 +1,6 @@
+.contenedorBody {
+    background-color: #01042d;
+}
 /*----  titulos principales  ----*/
 .titulosPrincipales {
     color: #f1eaea;
@@ -5,15 +8,20 @@
     margin-top: 2%;
 }
 
+.titulosPrincipales h1{
+   font-size: 30px;
+   font-weight: bolder;
+}
+
 .titulosPrincipales h5{
-    margin-top: -0.8%;
+    margin-top: -1%;
+    font-size: 23px;
 }
 
 /* ----  Carrusel con texto 1  ---- */
 .texto-y-carrusel {
-    display: inline-flex;
+    display: flex
 }
-
 .texto-y-carrusel .textos {
     margin-left: 7%;
     margin-top: 6%;
@@ -30,7 +38,6 @@
 
 .texto-y-carrusel .silderVertical {
     position: absolute;
-
 }
 
 /* ---- ---- Carrusel Completo 2 ---- ---- */

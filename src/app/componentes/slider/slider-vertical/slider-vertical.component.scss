@@ -31,14 +31,16 @@
 }
 
 .peliculasRecomendadas .contenedorPrincipal {
-    display: flex;
-    align-items: center;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 0px;
 }
 
 .peliculasRecomendadas .contenedorPrincipal .flechaIzquierda,
 .peliculasRecomendadas .contenedorPrincipal .flechaDerecha {
-    position: relative;
+    position: absolute;
     border: none;
     background: rgba( 0, 0, 0, 0.1);
     font-size: 40px;
@@ -53,7 +55,7 @@
 }
 
 .peliculasRecomendadas .contenedorPrincipal .flechaIzquierda {
-    left: 0;
+    left: 50%;
 }
 
 .peliculasRecomendadas .contenedorPrincipal .flechaDerecha {
@@ -68,10 +70,12 @@
 
 /* ---------------------------Carrusel--------------------------*/
 .peliculasRecomendadas .contenedorCarrusel {
-    width: 55%;
+    width: 100%;
     padding: 20px 0;
     overflow: hidden;
     scroll-behavior: smooth;
+    grid-area: 1 / 2 / 2 / 3;
+    position: relative;
 }
 
 .peliculasRecomendadas .contenedorCarrusel .carrusel {
