@@ -1,0 +1,43 @@
+/*----  titulos principales  ----*/
+.titulosPrincipales {
+    color: #f1eaea;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.titulosPrincipales h5{
+    margin-top: -0.8%;
+}
+
+/* ----  Carrusel con texto 1  ---- */
+.texto-y-carrusel {
+    display: inline-flex;
+}
+
+.texto-y-carrusel .textos {
+    margin-left: 7%;
+    margin-top: 6%;
+    color: #f1eaea;
+    width: 400px;
+    position: relative;
+}
+
+.texto-y-carrusel .textos h4 {
+    margin-top: -1%;
+    flex-direction: row;
+
+}
+
+.texto-y-carrusel .silderVertical {
+    position: absolute;
+
+}
+
+/* ---- ---- Carrusel Completo 2 ---- ---- */
+.titulo h3 {
+    color: #f1eaea;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+

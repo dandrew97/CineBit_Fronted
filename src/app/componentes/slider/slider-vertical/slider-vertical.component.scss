@@ -27,7 +27,7 @@
 
 /* ----------Contenedor principal y flechas-------------*/
 .peliculasRecomendadas {
-    margin-top: 70px;
+    margin-top: 1%;
 }
 
 .peliculasRecomendadas .contenedorPrincipal {
@@ -46,7 +46,7 @@
     top: calc(50% - 25%);
     line-height: 40px;
     width: 50px;
-    color: #010101;
+    color: #c3bfbf;
     cursor: pointer;
     z-index: 500;
     transition: 0.2s ease all;
@@ -68,7 +68,7 @@
 
 /* ---------------------------Carrusel--------------------------*/
 .peliculasRecomendadas .contenedorCarrusel {
-    width: 50%;
+    width: 55%;
     padding: 20px 0;
     overflow: hidden;
     scroll-behavior: smooth;
@@ -92,9 +92,7 @@
 
 .peliculasRecomendadas .contenedorCarrusel .carrusel .pelicula img {
     width: 100%;
-    vertical-align: top;
-    border-radius: 5%;
-    
+    vertical-align: top;   
 }
 
 /* ---- ---- ---- ---- ----  Media Queries ---- ---- ---- ---- ---- ---- */
@@ -114,5 +112,4 @@
     .peliculasRecomendadas .flechaDerecha {
         display: none;
     }
-
 }
