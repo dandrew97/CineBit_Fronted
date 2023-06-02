@@ -1,0 +1,113 @@
+/* Estilos generales para todos los elementos */
+* {
+  border-radius: 15px;
+}
+
+/* Estilos para el carrusel de imágenes */
+section {
+  margin: auto;
+  display: flex;
+  width: 800px;
+  height: 530px;
+  align-items: center;
+  justify-content: center;
+}
+
+section img {
+  width: 250px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+section img:hover {
+  cursor: crosshair;
+  width: 400px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  color: #f0f0f0;
+}
+
+/* Estilos para las cards */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.section {
+  flex: 0 0 calc(50% - 20px);
+  max-width: 400px;
+  margin: 30px;
+}
+
+.section h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  margin-top: 5px;
+  font-size: 26px;
+  text-align: center;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 600px) {
+  .section {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Estilos específicos para la clase "color" fondo pagina */
+.color {
+  background: #01042d;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

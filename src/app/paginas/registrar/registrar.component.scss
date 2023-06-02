@@ -1,137 +1,155 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap");
+/*//* Estilos globales aplicados a todos los elementos */
 * {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-}
-body {
-  background-image: url(/Assest/Img/Fondo2.jpg);
-  height: 80%;
-}
-
-
-.Principal {
-  display: flex;
-  justify-content: center;
-  font-weight: 500;
   font-size: 16px;
-  margin: auto;
-  width:400px;
-  height: auto;
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
-  border-radius: 17px;
+  color: #f6f6f6;
 }
 
-.Formulario {
+/*//* Estilos del contenedor principal del formulario */
+.contentForm {
+  width: 80%; /*//* Ancho del contenedor */
+  height: auto; /*//* Altura automática */
+  margin: auto; /*//* Margen automático en los cuatro lados */
+  margin-top: 10vh; /*//* Margen superior */
+  padding: auto; /*//* Relleno automático */
+  display: flex; /*//* Mostrar como flex */
+  justify-content: center; /*//* Centrar horizontalmente */
+  align-items: center; /*//* Centrar verticalmente */
+  text-align: center; /*//* Alinear el texto al centro */
+  background: rgba(255, 255, 255, 0.03); /*//* Fondo con transparencia */
+  box-shadow: 0px 0px 100px 3px rgba(17, 26, 219, 0.3); /*//* Sombra */
+  backdrop-filter: blur(10px); /*//* Desenfoque del fondo */
+  border-radius: 20px; /*//* Borde redondeado */
+}
+
+/*//* Estilos del contenedor de los elementos hijos */
+.contentChildren {
+  display: grid; /*//* Mostrar como cuadrícula */
+  grid-template-columns: repeat(10, 1fr); /*//* Columnas de igual ancho */
+  grid-template-rows: repeat(7, 1fr); /*//* Filas de igual alto */
+  grid-column-gap: 0px; /*//* Espacio entre columnas */
+  grid-row-gap: 0px; /*//* Espacio entre filas */
+}
+
+/*//* Estilos del Div 1 */
+.div1 {
+  grid-area: 1 / 4 / 2 / 8; /*//* Posición en la cuadrícula */
+}
+
+/*//* Estilos del título dentro de Div 1 */
+.div1 title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4375rem;
+}
+
+/*//* Estilos del párrafo dentro de Div 1 */
+.div1 p {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+/*//* Estilos de los Div 2 a Div 11 */
+.div2 {
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.div3 {
+  grid-area: 2 / 5 / 3 / 7;
+}
+
+.div4 {
+  grid-area: 2 / 8 / 3 / 10;
+}
+
+.div5 {
+  grid-area: 3 / 2 / 4 / 6;
+}
+
+.div6 {
+  grid-area: 3 / 6 / 4 / 10;
+}
+
+.div7 {
+  grid-area: 4 / 2 / 5 / 6;
+}
+
+.div8 {
+  grid-area: 4 / 6 / 5 / 10;
+}
+
+.div9 {
+  grid-area: 5 / 2 / 6 / 10;
+}
+
+.div10 {
+  grid-area: 7 / 5 / 8 / 7;
+  width: 625px;
+  height: 75px;
+  background: linear-gradient(
+    0deg,
+    rgba(104, 31, 223, 0.1),
+    rgba(104, 31, 223, 0.1)
+  );
+  border-radius: 20px;
+}
+
+/*//* Estilos del párrafo dentro de Div 10 */
+.div10 p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.625;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /*//* Opacidad/Gris Claro */
+  color: #b5b5b5;
+}
+
+.div11 {
+  grid-area: 6 / 4 / 7 / 8;
+}
+
+/*//* Estilos del botón dentro de Div 11 */
+.div11 button {
+  width: 195px;
+  /*//* Primary/Azul Secundario */
+  background: linear-gradient(90.36deg, #111adb 3.28%, #0b1494 96.22%);
+  border-radius: 20px;
+  font-family: 'Montserrat-Alt1';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
   text-align: center;
 }
 
-.logo {
-  width: 90px;
-  height: 90px;
-  margin: auto;
+/*//* Estilos para componentes de Material Angular */
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
 }
-.Titulo {
-  font-size: 1.55em;
-  margin-bottom: 5px;
+
+.example-full-width {
+  width: 100%;
 }
-.Form-p{
-    font-size: 15px;
+
+td {
+  padding-right: 8px;
 }
-.inputs {
+
+:host {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-}
-.form-control{
-  line-height: 28px;
-  border: 2px solid transparent;
-  border-bottom-color: #bf1d18;
-  padding: 10px;
-  outline: none;
-  background-color: transparent;
-  transition: 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.form-control:focus,
-input:hover {
-  outline: none;
-  padding: 10px;
-  border-radius: 17px;
-  border-color: #bf1d18;
-}
-
-.label {
-  font-size: 15px;
-  font-weight: 600;
-  margin-top: 15px;
-
-}
-.checkbox{
-    margin-top: 5px;
-}
-.checkbox-input{
-    font-size: 12px;
-}
-
-.botones {
-  font-size: 13px;
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-  justify-content: space-evenly;
-}
-
-.btn {
-  background: linear-gradient(to bottom, #bf1d18 0%, #871410 100%);
-  color: white;
-  padding: 10px 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  border-radius: 17px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
-  transition: all 0.45s;
-  text-decoration: none;
-}
-
-.Iniciar {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
-}
-
-.btn:active {
-  transform: scale(0.95);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
-}
-
-.div-copy{
-    margin-top: 20px;
-    font-size: 12px;
-}
-
-@media (max-width: 950px) {
-  body {
-    background-size: 250%;
-  }
-}
-
-@media (max-width: 360px) {
-  body {
-    background-size: 450%;
-  }
-}
-
-@media (max-width: 412px) {
-  body {
-    background-size: 450%;
-  }
+  align-items: flex-start;
 }
