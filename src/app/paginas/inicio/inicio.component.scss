@@ -1,0 +1,28 @@
+.Contenedor {
+    background-color: #373737;
+    color: #cdcdcd;
+  }
+
+  .container, col-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+ .text-center{
+    margin: 30px;
+    text-align: center;
+ }
+
+
+.text-center2{
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.img_perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
