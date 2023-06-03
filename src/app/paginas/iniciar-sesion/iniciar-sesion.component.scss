@@ -1,142 +1,242 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap");
-
+/*//* Estilos globales aplicados a todos los elementos */
 * {
   margin: 0;
   padding: 0;
-}
-body {
-  background-image: url(/Assest/Img/Fondo2.jpg);
-}
-.section {
-  display: flex;
-  justify-content: center;
-  align-content: center;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 22px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.Principal {
-  margin-top: 150px;
-  width: 350px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
-  border-radius: 17px;
-  padding: 20px;
-  border: none;
-}
+// //*    ESTILOS HEADER @Mauro9104
+// nav {
+//   display: grid;
+//   grid-template-columns: repeat(7, 1fr);
+//   padding: 15px 25px 0 25px;
+//   grid-template-rows: 1fr;
+//   grid-column-gap: 7.5vw;
+//   }
+//   .div1Nav { grid-area: 1 / 1 / 2 / 2; }
+//   .div2Nav { grid-area: 1 / 7 / 2 / 8; }
+//   //*  FIN ESTILOS HEADER @Mauro9104
 
-.formulario {
-  padding: 25px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+i{
+  color: #f6f6f6;
 }
-
-.logo {
-  width: 90px;
-  height: 90px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-.titulo {
-  font-size: 1.55em;
-  margin-bottom: 7px;
-  display: flex;
-  justify-content: center;
-}
-.Bienvenida p {
+/*//* Estilos del contenedor principal del formulario */
+.contentForm {
+  width: 80vw; 
+  height: auto; 
+  margin: auto; 
+  margin-top: 10vh; 
+  padding-bottom: 25px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   text-align: center;
-}
-.inputs {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 15px;
-}
-.input {
-  line-height: 28px;
-  border: 2px solid transparent;
-  border-bottom-color: #bf1d18;
-  padding: 10px;
-  outline: none;
-  background-color: transparent;
-  transition: 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 0px 100px 3px rgba(17, 26, 219, 0.3);
+  backdrop-filter: blur(10px); /*//* Desenfoque del fondo */
+  border-radius: 20px; /*//* Borde redondeado */
 }
 
-.input:focus,
-input:hover {
-  outline: none;
-  padding: 10px;
-  border-radius: 17px;
-  border-color: #bf1d18;
+/*//* Estilos del contenedor de los elementos hijos */
+.contentChildren {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0;
+    }
+
+/*//* Estilos del Div 1 */
+.div1 {
+  grid-area: 1 / 4 / 2 / 8; /*//* Posición en la cuadrícula */
+  color: #f6f6f6;
 }
 
-.label{
-  font-size: 15px;
+/*//* Estilos del título dentro de Div 1 */
+.div1 title {
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4375rem;
+}
+  .div1 { grid-area: 1 / 4 / 2 / 6; 
+    margin-top: 20px;
+  font-style: normal;
   font-weight: 600;
-  margin: 10px;
-  margin-top: 25px;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  width: 100%;}
+  .div2 { grid-area: 2 / 2 / 3 / 4; }
+  .div3 { grid-area: 2 / 4 / 3 / 6; }
+  .div4 { grid-area: 2 / 6 / 3 / 8; }
+  .div5 { grid-area: 3 / 2 / 4 / 5; }
+  .div6 { grid-area: 3 / 5 / 4 / 8; }
+  .div7 { grid-area: 4 / 2 / 5 / 5; }
+  .div8 { grid-area: 4 / 5 / 5 / 8; }
+  .div9 { grid-area: 5 / 2 / 6 / 8; }
+  .div10 { grid-area: 6 / 3 / 7 / 7; 
+    height: 75px;
+    background: linear-gradient(
+      0deg,
+      rgba(104, 31, 223, 0.1),
+      rgba(104, 31, 223, 0.1)
+    );
+    border-radius: 20px;
+  }
+  .div10[_ngcontent-ng-c1466124148] p[_ngcontent-ng-c1466124148] {
+    font-style: normal;
+    font-weight: 500;
+    height: auto;
+    font-size: 8px;
+    line-height: 12px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #b5b5b5;
 }
-
-.botones {
-  font-size: 13px;
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  margin-top: 40px;
-  justify-content: space-evenly;
-}
-
-.btn {
-  background: linear-gradient(to bottom, #bf1d18 0%, #871410 100%);
-  color: white;
-  padding: 10px 20px;
+  .div11 { grid-area: 7 / 4 / 8 / 6; 
+    width: 195px;
+  /*//* Primary/Azul Secundario */
+  justify-self: center;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border: none;
-  border-radius: 17px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
-  transition: all 0.45s;
-  text-decoration: none;
+  text-align: center;
 }
 
-.Iniciar {
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.03em;
+.div11[_ngcontent-ng-c1466124148] button[_ngcontent-ng-c1466124148] {
+    background: linear-gradient(90.36deg, #111adb 3.28%, #0b1494 96.22%);
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    font-family: "Montserrat-Alt1";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.375rem;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #f6f6f6;
 }
 
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+
+/*//* Estilos para componentes de Material Angular */
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
 }
 
-.btn:active {
-  transform: scale(0.95);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+.example-full-width {
+  width: 100%;
 }
 
-@media (max-width: 950px) {
-  body {
-    background-size: 250%;
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.example-container mat-form-field + mat-form-field {
+  margin-left: 8px;
+}
+
+.example-right-align {
+  text-align: right;
+}
+.example-chip-list {
+  width: 100%;
+}
+
+input.example-right-align::-webkit-outer-spin-button,
+input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+}
+
+
+/*//* Estilos para hacer los inputs de Angular Material transparentes */
+// .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+//   background-color: none;
+// }
+// .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+//   background-color: transparent;
+// }
+// mat-label{
+//   background-color: transparent;
+// }
+// mat-form-field{
+//   background-color: transparent;
+// }
+
+@media screen and (min-width: 445px) and (max-width: 1000px) {
+ 
+/*//* Estilos del contenedor principal del formulario */
+.contentForm {
+  height: auto; 
+  margin: auto;
+  width: 80vw; 
+  margin-top: 3vh; 
+  padding: 25px 35px 25px 35px;
+}
+
+/*//* Estilos del contenedor de los elementos hijos */
+.contentChildren {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+/*//* Estilos del Div 1 */
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 3 / 1 / 4 / 2; }
+.div4 { grid-area: 4 / 1 / 5 / 2; }
+.div5 { grid-area: 5 / 1 / 6 / 2; }
+.div6 { grid-area: 6 / 1 / 7 / 2; }
+.div7 { grid-area: 7 / 1 / 8 / 2; }
+.div8 { grid-area: 8 / 1 / 9 / 2; }
+.div9 { grid-area: 9 / 1 / 10 / 2; }
+.div10 { display: none; }
+.div11 { grid-area: 11 / 1 / 12 / 2; 
+margin-top: -150px;}
+}
+
+@media screen and (max-width: 444px) {
+ 
+  /*//* Estilos del contenedor principal del formulario */
+  .contentForm {
+    height: auto;
+    margin: auto;
+    width: 80vw; 
+    margin-top: 3vh;
+    padding: 25px 35px 25px 35px;
   }
-}
-
-@media (max-width: 360px) {
-  body {
-    background-size: 450%;
+  
+  /*//* Estilos del contenedor de los elementos hijos */
+  .contentChildren {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(11, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      }
+  
+  /*//* Estilos del Div 1 */
+  .div1 { grid-area: 1 / 1 / 2 / 2; }
+  .div2 { grid-area: 2 / 1 / 3 / 2; }
+  .div3 { grid-area: 3 / 1 / 4 / 2; }
+  .div4 { grid-area: 4 / 1 / 5 / 2; }
+  .div5 { grid-area: 5 / 1 / 6 / 2; }
+  .div6 { grid-area: 6 / 1 / 7 / 2; }
+  .div7 { grid-area: 7 / 1 / 8 / 2; }
+  .div8 { grid-area: 8 / 1 / 9 / 2; }
+  .div9 { grid-area: 9 / 1 / 10 / 2; }
+  .div10 { display: none; }
+  .div11 { grid-area: 11 / 1 / 12 / 2; 
+  margin-top: -280px;}
   }
-}
-
-@media (max-width: 412px) {
-  body {
-    background-size: 450%;
-  }
-}
