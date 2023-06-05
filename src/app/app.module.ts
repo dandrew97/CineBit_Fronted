@@ -34,7 +34,9 @@ import { CartoonsComponent } from './subpaginas/cartoons/cartoons.component'; //
 import { ColeccionesComponent } from './subpaginas/colecciones/colecciones.component'; //TODO Importación del componente ColeccionesComponent para la subpágina de colecciones
 import { DocumentalesComponent } from './subpaginas/documentales/documentales.component'; //TODO Importación del componente DocumentalesComponent para la subpágina de documentales
 import { GenerosComponent } from './subpaginas/generos/generos.component'; //TODO Importación del componente GenerosComponent para la subpágina de géneros
-
+import { UserComponent } from './user/user.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +61,8 @@ import { GenerosComponent } from './subpaginas/generos/generos.component'; //TOD
     CartoonsComponent,
     ColeccionesComponent,
     DocumentalesComponent,
-    GenerosComponent
+    GenerosComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +75,9 @@ import { GenerosComponent } from './subpaginas/generos/generos.component'; //TOD
     MatIconModule,
     MatChipsModule,
     MatCardModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [], //TODO Proveedores de servicios
   bootstrap: [AppComponent] //TODO Componente raíz de la aplicación
