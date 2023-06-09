@@ -1,0 +1,51 @@
+<!-- <nav class="parent">
+  <div class="div1Nav">CINBIT</div>
+  <div class="div2Nav"><button>Iniciar Sesión</button></div>
+</nav> -->
+
+<!-- ! ESTE ES EL CUERPO DE EL FORM DE EL REGISTRO
+<section class="contentForm">
+    <div class="contentChildren">
+      <!--? Div 1 -->
+      <div class="div1">
+        <p>Iniciar sesion</p>
+      </div>
+  
+      <!--? Div 2: Campo de entrada para el apodo -->
+      <div class="div2">
+        <mat-form-field class="example-full-width ">
+          <mat-label class="transparent-card">Apodo</mat-label>
+          <input matInput>
+        </mat-form-field>
+      </div>
+      <!--? Div 5: Campo de entrada para el correo electrónico -->
+      <div class="div5">
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput [formControl]="emailFormControl" placeholder="Ej. pedro@ejemplo.com">
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Por favor ingrese un Email válido
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            El Email es <strong>requerido</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+  
+      <!--? Div 6: Campo de entrada para la contraseña -->
+      <div class="div6">
+        <mat-form-field class="example-full-width">
+                  <mat-label>Ingresa tu contraseña</mat-label>
+                  <input matInput [type]="hide ? 'password' : 'text'">
+                  <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>      
+        </mat-form-field>
+      </div>
+
+      <!--? Div 11: Botón para crear cuenta -->
+      <div class="div11">
+        <button>Crear cuenta</button>
+      </div>
+
+      /*

@@ -1,0 +1,40 @@
+<div class="Principal">
+    <div class="form-container">
+<p class="ittle">Registrar</p>
+<form (ngSubmit)="create()" #createForm="ngForm">
+    <div class="input-group">
+        <label for="">Usuario</label>
+        <input [(ngModel)]="username" type="text" name="username" id="username" placeholder="" required>
+        <div class="forgot">
+            
+        </div>
+        <label for="">Nombre</label>
+        <input [(ngModel)]="name" type="text" name="name" id="name" placeholder="" required>
+        <div class="forgot">
+            
+        </div>
+        <label for="">Apellido</label>
+        <input [(ngModel)]="lastNames" type="text" name="lastNames" id="lastNames" placeholder="" required>
+        <div class="forgot">
+           
+        </div>
+
+        <div class="input-group">
+            <label for="username">email</label>
+            <input [(ngModel)]="email" type="email" name="email" id="email" placeholder="" required>
+        </div>
+        <div class="input-group">
+            <label for="username">Telephono</label>
+            <input [(ngModel)]="phone" type="email" name="email" id="email" placeholder="" required>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Contraseña</label>
+            <input [(ngModel)]="password" type="password" name="password" id="password" placeholder="" required>
+            <div class="forgot">
+                <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
+            </div>
+        </div>
+        <button type="submit" class="sign" [disabled]="!createForm.form.valid">Registrar</button>
+    </div>
+</form>

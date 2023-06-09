@@ -1,17 +1,22 @@
- *{
+/*//? Estilo global para todos los elementos */
+*{
   font-family: 'Montserrat', sans-serif;
+}
 
- }
-// Resto de los estilos...
-
+/*//? Estilos del pie de página */
 .footer-info-single {
+  /*//? Estilo del título dentro de la sección de información del pie de página */
   h2 {
     font-size: 1.4rem; 
   }
 
+  /*//? Estilo de la lista no ordenada dentro de la sección de información del pie de página */
   ul {
+    /*//? Estilo de cada ítem de la lista */
     li {
+      /*//? Estilo del enlace dentro de cada ítem de la lista */
       a {
+        /*//? Estilo del icono dentro del enlace */
         i {
           font-size: 1.6rem; 
         }
@@ -20,7 +25,7 @@
   }
 }
 
-
+/*//? Estilo para un elemento de separación */
 .span-or {
   display: block;
   position: absolute;
@@ -39,11 +44,13 @@
   margin-bottom: 0px !important;
 }
 
+/*//? Estilos generales del pie de página */
 footer.nb-footer {
   background: #01042d;
   border-top: 4px solid #21057c;
 }
 
+/*//? Estilos de la sección "Acerca de" dentro del pie de página */
 footer.nb-footer .about {
   margin: 0 auto;
   margin-top: 40px;
@@ -61,6 +68,7 @@ footer.nb-footer .about .social-media {
   margin-top: 15px;
 }
 
+/*//? Estilos de los enlaces de redes sociales dentro de la sección "Acerca de" del pie de página */
 footer.nb-footer .about .social-media ul li a {
   display: inline-block;
   width: 45px;
@@ -78,6 +86,7 @@ footer.nb-footer .about .social-media ul li a:hover {
   border-color: #0415ff;
 }
 
+/*//? Estilos de la sección de información individual dentro del pie de página */
 footer.nb-footer .footer-info-single {
   margin-top: 30px;
 }
@@ -106,6 +115,7 @@ footer.nb-footer .footer-info-single p {
   color: #f2f2f2;
 }
 
+/*//? Estilos de la sección de derechos de autor dentro del pie de página */
 footer.nb-footer .copyright {
   margin-top: 15px;
   background: #030f42;
@@ -118,13 +128,14 @@ footer.nb-footer .copyright p {
   padding: 0;
 }
 
+/*//? Estilo del título con la clase "titulo" */
 .titulo{
   color: #f2f2f2;
 }
 
+/*//? Estilos generales de los párrafos */
 p{
   font-size: 1.5rem;
   color: #f2f2f2;
- margin: auto;
+  margin: auto;
 }
-

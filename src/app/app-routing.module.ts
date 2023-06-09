@@ -19,7 +19,7 @@ import { PeliculasComponent } from './subpaginas/peliculas/peliculas.component';
 import { SeriesComponent } from './subpaginas/series/series.component';
 //! Importación 404 
 import { NotFoundComponent } from './paginas/not-found/not-found.component';
-
+import { UserComponent } from './user/user.component';
 const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
   { path: 'inicio', component: InicioComponent },
@@ -39,7 +39,13 @@ const routes: Routes = [
   { path: 'series', component:SeriesComponent},
   
   { path: '404', component: NotFoundComponent },
-  { path: '**', redirectTo: 'NotFoundComponent' }
+  { path: '**', redirectTo: 'NotFoundComponent' },
+
+  {path:'user', component:UserComponent, loadChildren:() =>
+  import('./user/user.module')
+  .then(m => m.UserModule)
+  }
+
 ];
 
 @NgModule({
