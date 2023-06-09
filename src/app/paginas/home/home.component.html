@@ -1,107 +1,176 @@
-
 <div class="contenedorBody">
-        <!--   NavBar   -->
-<app-nav></app-nav>
+  <div class="degradadoBody">
+    <!--   NavBar   -->
+    <app-nav></app-nav>
 
-<!-- ---- ---- Slider Principal ---- ---- ---- -->
-<app-slider-principal></app-slider-principal>
+    <!-- ---- ---- Slider Principal ---- ---- ---- -->
+    <app-slider-principal></app-slider-principal>
 
-<!-- ----- ---- ---- Titulos Iniciales ---- ---- ---- ---- --- -->
-<div class="titulosPrincipales">
-    <h1> Aquí empieza tu viaje, ¡Bienvenid@ a CineBit! </h1>
-    <h5> ¿Tu primera vez aquí? Te dejamos una sección de las películas más votadas. </h5>
-</div>
-<!--  Carrusel Completo   -->
-<app-slider2></app-slider2>
+    <!-- ----- ---- ---- Titulos Iniciales ---- ---- ---- ---- --- -->
+    <div class="titulosPrincipales">
+      <h1>Aquí empieza tu viaje, ¡Bienvenid@ a CineBit!</h1>
+      <h5>
+        ¿Tu primera vez aquí? Te dejamos una sección de las películas más
+        votadas.
+      </h5>
+    </div>
+    <!--  Carrusel Completo   -->
+    <app-slider2></app-slider2>
 
-<!-- ----- ---- Titulo ---- --- -->
-<div class="titulosPrincipales">
-        <h5> Películas más taquilleras </h5>
-</div>
-<!--  Carrusel Completo   -->
-<app-slider2></app-slider2>
-
-<!-- ----- ---- Titulo ---- --- -->
-<div class="titulosPrincipales">
-    <h5> Series más populares </h5>
-</div>
-<!--  Carrusel Completo   -->
-<app-slider2></app-slider2>
-
-<app-footer></app-footer>
-
-
-
-
-
-
-
-<hr>
-<hr>
-<hr>
-<!---- ---Carrusel con Texto --- ---->
-<section class="texto-y-carrusel">
-    <!-- <div class="fondo">
-        <img src="" alt="">
-    </div> -->
-    <div class="textos">
+    <!---- ---Carrusel con Texto --- ---->
+    <section class="texto-y-carrusel">
+      <div class="textos">
         <div class="logo">
-            <p> CINE BIT ACCION </p>
+          <img src="../../../assets/img/cineaccion.png" alt="img" />
         </div>
         <div class="titulo">
-            <h4> Peliculas de acción que </h4>
-            <h4> no te puedes perder </h4>
+          <h2>Peliculas de acción que</h2>
+          <h2>no te puedes perder</h2>
         </div>
         <div class="texto">
-            <h6> Encuentra tu próxima obsesión entre </h6>
-            <h6> todas estas películas, series, </h6>
-            <h6> documentales y mucho más </h6>
-            <button> VER MÁS </button>
+          <h6>Encuentra tu próxima obsesión entre</h6>
+          <h6>todas estas películas, series,</h6>
+          <h6>documentales y mucho más</h6>
+          <button>VER MÁS</button>
         </div>
+      </div>
+      <div class="silderVertical">
+        <app-slider-vertical></app-slider-vertical>
+      </div>
+    </section>
+    <!----------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    <!--Carrusel 3 card -->
+    <div class="fullscreen">
+      <p> Más votados </p>
+      <div class="container">
+        <div class="card card_1">
+          <div class="content">
+            <div class="title">
+              La Casa de Papel
+            </div>
+            <div class="text">
+              The most watch series in 2018, dont you miss any episode on Netflix!
+            </div>
+          </div>
+          <div class="sinopse">
+                      
+              <iframe id="ytplayer" type="text/html" data-video="https://www.youtube.com/embed/ZAXA1DV4dtI?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&modestbranding=1&controls=0&showinfo=1&mute=1"
+      src="" frameborder="0" autoplay allowfullscreen></iframe>
+            
+            <div class="content-sinopse">          
+              <div class="title">Series Synopsis</div>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in hendrerit nulla, sed congue lorem. Phasellus sollicitudin tortor dui, id scelerisque ipsum ultrices vitae. Cras sed laoreet odio, vel ornare enim. Quisque porta quam at augue posuere, id luctus velit ullamcorper. Aenean sapien ligula, malesuada in mollis eu, vestibulum ut quam.
+              </div>
+            </div>
+            <div class="view series_lacasa"> Watch Full Series </div>
+          </div>
+        </div>
+        <div class="card card_2">
+          <div class="content">
+            <div class="title">
+              Game Of Thrones
+            </div>
+            <div class="text">
+              For alot of people the best series ever created, the most proud son of HBO!
+            </div>
+          </div>
+          <div class="sinopse">
+            
+              <iframe id="ytplayer" type="text/html" data-video="https://www.youtube.com/embed/giYeaKsXnsI?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&modestbranding=1&controls=0&showinfo=1&mute=1"
+      src="" frameborder="0" autoplay allowfullscreen></iframe>
+            
+            <div class="content-sinopse">
+              <div class="title">Series Synopsis</div>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in hendrerit nulla, sed congue lorem. Phasellus sollicitudin tortor dui, id scelerisque ipsum ultrices vitae. Cras sed laoreet odio, vel ornare enim. Quisque porta quam at augue posuere, id luctus velit ullamcorper. Aenean sapien ligula, malesuada in mollis eu, vestibulum ut quam.
+              </div>
+            </div>
+            <div class="view series_got"> Watch Full Series </div>
+          </div>
+        </div>
+        <div class="card card_3">
+          <div class="content">
+            <div class="title">
+              Vikings
+            </div>
+            <div class="text">
+              One of the best series about Vikings and their way of living dont miss it!
+            </div>
+          </div>
+          <div class="sinopse">
+              
+              <iframe class="vikings" data-video="https://www.youtube.com/embed/9GgxinPwAGc?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&modestbranding=1&controls=0&showinfo=1&mute=1" id="ytplayer" type="text/html"
+      src="" frameborder="0" autoplay allowfullscreen></iframe>
+            
+            <div class="content-sinopse">
+              <div class="title">Series Synopsis</div>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in hendrerit nulla, sed congue lorem. Phasellus sollicitudin tortor dui, id scelerisque ipsum ultrices vitae. Cras sed laoreet odio, vel ornare enim. Quisque porta quam at augue posuere, id luctus velit ullamcorper. Aenean sapien ligula, malesuada in mollis eu, vestibulum ut quam.
+              </div>
+            </div>
+            <div class="view series_vikings"> Watch Full Series </div>
+          </div>
+        </div>
+      </div>
     </div>
     
-    <div class="silderVertical">
-        <app-slider-vertical></app-slider-vertical>
+    <div class="fullserie">
+      <div class="close"><img src="http://www.cartaodental.com/nbase/image/close.svg"></div>  
+    
+      <div class="episodes">
+        <div class="episode episode_1" data-lacasa="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-616580.jpg" data-got="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-43195.jpg" data-vikings="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-504732.png">
+    
+        </div>
+        <div class="episode episode_2" data-lacasa="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-616580.jpg" data-got="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-43195.jpg" data-vikings="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-504732.png">
+    
+        </div>
+        <div class="episode episode_3" data-lacasa="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-616580.jpg" data-got="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-43195.jpg" data-vikings="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-504732.png">
+    
+        </div>
+         <div class="episode episode_4" data-lacasa="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-616580.jpg" data-got="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-43195.jpg" data-vikings="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-504732.png">
+    
+        </div>
+         <div class="episode episode_5" data-lacasa="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-616580.jpg" data-got="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-43195.jpg" data-vikings="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-504732.png">
+    
+        </div>
+      </div>
+    
     </div>
-</section>
+    <!----------------------------------------------------------------------------------------------------------------------------------------->
 
-<!-- Carrusel completo 2 -->
-<div class="titulo">
-    <h3> Películas más taquilleras </h3>
-</div>
-<app-slider2></app-slider2>
-
-
-<!---- ---Carrusel con Texto 2 --- ---->
-<div class="texto-y-carrusel">
-    <div class="silderVertical">
-        <app-slider-vertical></app-slider-vertical>
+    <!-- ----- ---- Titulo ---- --- -->
+    <div class="titulo1">
+      <h5>Películas más taquilleras</h5>
     </div>
-    <!-- <div class="fondo">
-        <img src="" alt="">
-    </div> -->
-    <div class="textos">
+    <!--  Carrusel Completo   -->
+    <app-slider2></app-slider2>
+
+    <!---- ---Carrusel con Texto --- ---->
+    <section class="texto-y-carrusel">
+      <div class="textos">
         <div class="logo">
-            <p> CINE BIT ACCION </p>
+          <img src="../../../assets/img/cineaccion.png" alt="img" />
         </div>
         <div class="titulo">
-            <h4> Las mejores películas </h4>
-            <h4> de drama para disfrutar </h4>
+          <h2>Peliculas de acción que</h2>
+          <h2>no te puedes perder</h2>
         </div>
         <div class="texto">
-            <h6> Encuentra lo más visto en drama para </h6>
-            <h6> tener una experiencia única con nuestra </h6>
-            <h6> plataforma </h6>
-            <button> VER MÁS </button>
+          <h6>Encuentra tu próxima obsesión entre</h6>
+          <h6>todas estas películas, series,</h6>
+          <h6>documentales y mucho más</h6>
+          <button>VER MÁS</button>
         </div>
+      </div>
+      <div class="silderVertical">
+        <app-slider-vertical></app-slider-vertical>
+      </div>
+    </section>
+
+    <!-- ----- ---- Titulo ---- --- -->
+    <div class="titulo2">
+      <h5>Series más populares</h5>
     </div>
-</div>
+    <!--  Carrusel Completo   -->
+    <app-slider2></app-slider2>
 
-
-<!-- Carrusel completo 3 -->
-<div class="titulo">
-    <h3> Series más populares </h3>
-</div>
-<app-slider2></app-slider2>
-
-</div>
+    <app-footer></app-footer>
