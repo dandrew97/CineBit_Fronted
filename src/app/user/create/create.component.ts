@@ -25,7 +25,5 @@ export class CreateComponent {
     this.userService.create(this.username,this.name,this.lastNames,this.email,this.phone,this.password);
 
     console.log("Usuario creado con Exito");
-    
-  }
-
+}
 }
