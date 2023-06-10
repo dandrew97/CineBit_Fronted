@@ -8,6 +8,7 @@ import { UserservicesService } from 'src/app/services/userservices.service';
 })
 export class CreateComponent {
 
+
   username!:string;
   name!:string;
   lastNames!:string;
@@ -15,11 +16,14 @@ export class CreateComponent {
   phone!:string;
   password!:string;
   
+
   constructor( private userService:UserservicesService){}
+  
   
   create():void{
 
     this.userService.create(this.username,this.name,this.lastNames,this.email,this.phone,this.password);
+
     console.log("Usuario creado con Exito");
     
   }

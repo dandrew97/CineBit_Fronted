@@ -1,11 +1,15 @@
 <div class="Principal">
+
 <div class="form-container">
-	<p class="title">Login</p>
+
+	<p class="title"> Iniciar Sesión </p>
+
 	<form (ngSubmit)="login()" #loginForm="ngForm" class="form">
 		<div class="input-group">
 			<label for="username">email</label>
 			<input [(ngModel)]="email" type="email" name="email" id="email" placeholder="" required>
 		</div>
+
 		<div class="input-group">
 			<label for="password">Password</label>
 			<input [(ngModel)]="password" type="password" name="password" id="password" placeholder="" required>
@@ -15,9 +19,10 @@
 		</div>
 		<button type="submit" class="sign" [disabled]="!loginForm.form.valid">Sign in</button>
 	</form>
+
 	<div class="social-message">
 		<div class="line"></div>
-		<p class="message">Login with social accounts</p>
+		<p class="message">Iniciar Sesión con Redes Sociales </p>
 		<div class="line"></div>
 	</div>
 	<div class="social-icons">
@@ -40,6 +45,7 @@
 	<p class="signup">Don't have an account?
 		<a rel="noopener noreferrer" href="#" class="">Sign up</a>
 	</p>
+
 </div>
 
 </div>

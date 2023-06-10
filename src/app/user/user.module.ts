@@ -9,15 +9,18 @@ import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
+  
   declarations: [
     LoginComponent,
     CreateComponent,
     ProfileComponent
   ],
+
   imports: [
     CommonModule,
     UserRoutingModule,
     FormsModule
   ]
 })
+
 export class UserModule { }

@@ -1,7 +1,8 @@
 <div class="Principal">
+
     <div class="form-container">
-<p class="ittle">Registrar</p>
-<form (ngSubmit)="create()" #createForm="ngForm">
+    <p class="ittle">Registrar</p>
+    <form (ngSubmit)="create()" #createForm="ngForm">
     <div class="input-group">
         <label for="">Usuario</label>
         <input [(ngModel)]="username" type="text" name="username" id="username" placeholder="" required>
@@ -25,7 +26,7 @@
         </div>
         <div class="input-group">
             <label for="username">Telephono</label>
-            <input [(ngModel)]="phone" type="email" name="email" id="email" placeholder="" required>
+            <input [(ngModel)]="phone" type="number" name="phone" id="phone" placeholder="" required>
         </div>
 
         <div class="input-group">
