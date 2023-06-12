@@ -6,18 +6,20 @@ import { LoginComponent } from './login/login.component';
 import { CreateComponent } from './create/create.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FormsModule } from '@angular/forms';
-
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
   declarations: [
     LoginComponent,
     CreateComponent,
-    ProfileComponent
+    ProfileComponent,
+    
   ],
   imports: [
     CommonModule,
     UserRoutingModule,
-    FormsModule
+    FormsModule,
+    
   ]
 })
 export class UserModule { }

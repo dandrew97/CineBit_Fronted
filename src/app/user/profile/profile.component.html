@@ -1,1 +1,45 @@
-<p>profile works!</p>
+<div>
+  <ul *ngIf="!editValue; else editInfo" >
+    <li>{{userProfile.username}}</li>
+    <li>{{userProfile.email}}</li>
+    <li>{{userProfile.name}}</li>
+    <li>{{userProfile.LastNames}}</li>
+    <li>{{userProfile.phone}}</li>
+    <li>{{userProfile.password}}</li>
+  </ul>
+  <br>
+  <div class="form-field">
+  <button (click)="editProfile()">editar perfil</button>
+</div>
+</div>
+
+<ng-template #editInfo>
+  <title>Formulario</title>
+  <form>
+    <div class="form-container">
+      <h2>Registro</h2>
+      <div class="form-field">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required [(ngModel)]="userProfile.username">
+      </div>
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required [(ngModel)]="userProfile.email">
+      </div>
+      <div class="form-field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-field">
+        <label for="">Subir archivo o imagen</label>
+        <input type="file" id="picture" name="picture" (change)="onFileSelected($event)">
+      </div>
+      <div class="form-field">
+        <button type="submit">Guardar </button>
+            </div>
+            <div class="form-field">
+              <button (click)="cancelUpdate()">Cancelar</button>
+            </div>
+    </div>
+  </form>
+</ng-template>

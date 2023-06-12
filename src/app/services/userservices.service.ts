@@ -5,6 +5,9 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
   providedIn: 'root'
 })
 export class UserservicesService {
+
+  private userEmail!:string;
+  private  userData!:string;
   private apiUrl = 'http://localhost:3000/users';
 
   constructor(private http: HttpClient) { }
@@ -21,6 +24,7 @@ export class UserservicesService {
         // this.authToken = response.accessToken;
         localStorage.setItem("token",response.token)
         console.log('Respuesta:', response);
+        this.userEmail = formData.email
       },
       (error) => {
         if(error instanceof HttpErrorResponse){
@@ -52,6 +56,21 @@ export class UserservicesService {
       }
      )
   }
+
+getUser(){
+   
+  const getUrl =  `${this.apiUrl}/${this.userEmail}`;
+  return this.http.get(getUrl) 
+}
+
+updateUser(){
+
+  const updateUrl =  `${this.apiUrl}
+  
+  // // /    ${this.userEmail}`;
+ 
+
+}
 
   getAuthHeaders():HttpHeaders{
     const authToken = localStorage.getItem("token");
