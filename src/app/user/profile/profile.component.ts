@@ -6,6 +6,7 @@ import { UserservicesService } from 'src/app/services/userservices.service';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss']
 })
+
 export class ProfileComponent {
 
   selectFile!:File;
