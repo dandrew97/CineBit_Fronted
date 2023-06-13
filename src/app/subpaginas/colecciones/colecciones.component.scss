@@ -1,26 +1,180 @@
+/*-- Estilos de los contenedores principales */
 .asterisco {
   box-sizing: border-box;
 }
 .body {
   width: 100vw;
-  height: 100vh;
+  height: 810px;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #01042d;
+  font-family: 'Montserrat';
 }
+// .bodyStartWars {
+//   margin-top: 500px;
+//   width: 100vw;
+//   height: 810px;
+//   margin: 0;
+//   background: #01042d;
+//   font-family: 'Montserrat';
+// }
+// .bodyHarry {
+//   margin-top: 500px;
+//   width: 100vw;
+//   height: 810px;
+//   margin: 0;
+//   background: #01042d;
+//   font-family: 'Montserrat';
+// }
+// .bodyJames {
+//   margin-top: 500px;
+//   width: 100vw;
+//   height: 810px;
+//   margin: 0;
+//   background: #01042d;
+//   font-family: 'Montserrat';
+// }
+// .bodyRyF {
+//   margin-top: 500px;
+//   width: 100vw;
+//   height: 810px;
+//   margin: 0;
+//   background: #01042d;
+//   font-family: 'Montserrat';
+// }
+// .bodySeñor {
+//   margin-top: 500px;
+//   width: 100vw;
+//   height: 810px;
+//   margin: 0;
+//   background: #01042d;
+//   font-family: 'Montserrat';
+// }
+// .bodyJurassic {
+//   margin-top: 500px;
+//   width: 100vw;
+//   height: 810px;
+//   margin: 0;
+//   background: #01042d;
+//   font-family: 'Montserrat';
+// }
+// .bodyPiratas {
+//   margin-top: 500px;
+//   width: 100vw;
+//   height: 810px;
+//   margin: 0;
+//   background: #01042d;
+//   font-family: 'Montserrat';
+// }
+// .bodyTransformers {
+//   margin-top: 500px;
+//   width: 100vw;
+//   height: 810px;
+//   margin: 0;
+//   background: #01042d;
+//   font-family: 'Montserrat';
+// }
+
+/* Titulos Iniciales */
+h1 {
+  color: #f1eaea;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-top: 5%;
+  text-align: center;
+}
+p {
+  color: #FFF;
+  margin-top: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+/* Seccion de MARVEL */
+.contenedorPrincipal {
+  width: 1300px; /* es como el 100 % de la pantalla */
+  height: 560px;
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  /* Este contenedor debe llevar el fondo estrellado */
+}
+
+/* IZQUIERDO - Este es el que lleva lleva el logo y el texto */
+.contenedorTexto { 
+  width: 850px;
+  height: 500px;
+  background-image: url('../../../assets/img/colecciones/fondoTexto.png');
+  grid-area: 1 / 1 / 2 / 2; 
+  position: absolute;
+  /* El fondo es negro */
+}
+.logo {
+  margin-left: 7%;
+  margin-top: 5%;
+  img {
+    width: 360px;
+    height: 110px;
+  }
+  
+}
+.titulo {
+  width: 510px;
+  margin-left: 7%;
+  margin-top: 1%;
+  text-align: left;
+  h2 {
+    color: #FFF;
+    font-size: 2rem;
+  }
+}
+.texto {
+  width: 560px;
+  margin-left: 7%;
+  text-align: left;
+  p {
+    text-align: left;
+  }
+}
+.texto2 {
+  width: 560px;
+  margin-left: 7%;
+  text-align: left;
+  p {
+    text-align: left;
+  }
+}
+
+/* DERECHO= Este lleva la tarjeta 3D */
+.contenedorCard { 
+  width: 720px;
+  height: 500px;
+  background-image: url('../../../assets/img/colecciones/fondoCard.png');
+  grid-area: 1 / 2 / 2 / 3; 
+  padding-top: 100px;
+  padding-left: 300px;
+  margin-right: 0;
+  position: absolute;
+  background-repeat: no-repeats;
+}
+
+/*-- Estilos aplicados a la card 3D --*/
 .card {
   width: 200px;
   height: 300px;
   position: relative;
-  display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   padding: 0 ;
   perspective: 2500px;
   margin: 0 ;
-  background-color: #191c29;
+  background-color: #01042d00;
   border: none;
 }
 .cover-image {
@@ -100,4 +254,568 @@
 .card:hover .character {
   opacity: 1;
   transform: translate3d(0%, -30%, 100px);
+}
+
+/* Contenedor de peliculas MARVEL */
+.contenedorPeliculasMarvel {
+  background-color: #01042d;
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+  width: 1000PX;
+  height: 400PX;
+  margin-left: 150PX;
+  margin-top: 470px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.cardPelicula{
+  width: 200px;
+  height: 320px;
+  border-radius: 10px;
+  position: relative;
+  padding: 0;
+  border: 3px solid rgb(14, 110, 193);
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin-left: 20PX;
+  box-shadow: 6px 6px 2px 0 rgba(53, 52, 52, 0.77);
+}
+
+.imgPeliculas {
+  width: 195px;
+  height: 315px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cardPelicula:nth-child(1) {
+  grid-row-start: span 1;
+}
+
+.cardPelicula:nth-child(2) {
+  grid-row-start: span 1;
+}
+
+.cardPelicula:nth-child(3) {
+  grid-row-start: span 1;
+}
+
+.cardPelicula:nth-child(4) {
+  grid-row-start: span 1;
+}
+
+.cardPelicula:nth-child(5) {
+  grid-row-start: span 1;
+}
+
+.cardPelicula:nth-child(6) {
+  grid-row-start: span 1;
+}
+
+.cardPelicula:nth-child(7) {
+  grid-row-start: span 1;
+}
+
+.cardPelicula:nth-child(8) {
+  grid-row-start: span 1;
+}
+
+.iconos {
+  text-align: center;
+}
+
+.cardPelicula:hover {
+  border-color: rgb(14, 110, 193);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.55);
+}
+
+.cardPelicula:hover .card-boton {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+
+}.card-boton {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(14, 110, 193);
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem .5rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+  text-align: center;
+  font-size: 1.5rem;
+  button {
+    background-color: #00000000;
+    border-radius: 50% 50% 50% 50%;
+    border: none;
+    width: 2.3rem;
+    height: 2rem;
+  }
+  i {
+    color: #fff;
+  }
+}
+
+/* ------------SECCION DE STAR WARS------------------- */
+/* Contendor del texto y la tarjeta 3D */
+.contenedorPrincipalStar {
+  width: 1300px; /* es como el 100 % de la pantalla */
+  height: 560px;
+  margin-top: 320px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+/* DERECHA= Este lleva la tarjeta 3D */
+.contenedorCardStar { 
+  width: 720px;
+  height: 500px;
+  background-image: url('../../../assets/img/colecciones/fondoCardstarwars.png');
+  grid-area: 1 / 2 / 2 / 3; 
+  padding-top: 100px;
+  padding-left: 300px;
+  margin-right: 0;
+  position: absolute;
+  background-repeat: no-repeats;
+}
+
+.contenedorPeliculasStarwars {
+  background-color: #01042d;
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+  width: 1000PX;
+  height: 400PX;
+  margin-left: 150PX;
+  margin-top: -45px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+
+
+/* ------------SECCION DE HARRY POTTER------------------- */
+/* Contendor del texto y la tarjeta 3D */
+.contenedorPrincipalHarry {
+  width: 1300px; /* es como el 100 % de la pantalla */
+  height: 560px;
+  margin-top: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+/* DERECHA= Este lleva la tarjeta 3D */
+.contenedorCardHarry { 
+  width: 720px;
+  height: 500px;
+  background-image: url('../../../assets/img/colecciones/fondoCardHarry.png');
+  grid-area: 1 / 2 / 2 / 3; 
+  padding-top: 100px;
+  padding-left: 300px;
+  margin-right: 0;
+  position: absolute;
+  background-repeat: no-repeats;
+}
+
+/* Este es el que contiene las peliculas de HARRY */
+.contenedorPeliculasHarry {
+  background-color: #01042d;
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+  width: 1000PX;
+  height: 400PX;
+  margin-left: 150PX;
+  margin-top: 35px;
+  position: absolute;
+  border-radius: 10px;
+}
+.contenedorPeliculasHarry2 {
+  background-color: #01042d;
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+  width: 1000PX;
+  height: 400PX;
+  margin-left: 150PX;
+  margin-top: 425px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+/* ------------SECCION DE JAMES BOND------------------- */
+/* Contendor del texto y la tarjeta 3D */
+.contenedorPrincipalJames {
+  width: 1300px; /* es como el 100 % de la pantalla */
+  height: 560px;
+  margin-top: 870px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+/* DERECHA= Este lleva la tarjeta 3D */
+.contenedorCardJames { 
+  width: 720px;
+  height: 500px;
+  background-image: url('../../../assets/img/colecciones/fondoJames.png');
+  grid-area: 1 / 2 / 2 / 3; 
+  padding-top: 100px;
+  padding-left: 300px;
+  margin-right: 0;
+  position: absolute;
+  background-repeat: no-repeats;
+}
+
+/* Este es el que contiene las peliculas de James Bond  */
+.contenedorPeliculasJames {
+  background-color: #01042d;
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+  width: 1000PX;
+  height: 400PX;
+  margin-left: 150PX;
+  margin-top: 512px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+/* ------------ SECCION DE RAPIDOS Y FURIOSOS ------------------- */
+/* Contendor del texto y la tarjeta 3D */
+.contenedorPrincipalRyF {
+  width: 1300px; /* es como el 100 % de la pantalla */
+  height: 560px;
+  margin-top: 955px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+/* DERECHA= Este lleva la tarjeta 3D */
+.contenedorCardRyF { 
+  width: 720px;
+  height: 500px;
+  background-image: url('../../../assets/img/colecciones/fondoRyF.png');
+  grid-area: 1 / 2 / 2 / 3; 
+  padding-top: 100px;
+  padding-left: 300px;
+  margin-right: 0;
+  position: absolute;
+  background-repeat: no-repeats;
+}
+
+/* Este es el que contiene las peliculas de Rapido y Furioso */
+.contenedorPeliculasRyF {
+  background-color: #01042d;
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+  width: 1000PX;
+  height: 970PX;
+  margin-left: 150PX;
+  margin-top: 594px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.cardPeliculaRyF{
+  width: 200px;
+  height: 320px;
+  border-radius: 10px;
+  position: relative;
+  padding: 0;
+  border: 3px solid rgb(14, 110, 193);
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin-left: 20px;
+  margin-top: 28px;
+  box-shadow: 6px 6px 2px 0 rgba(53, 52, 52, 0.77);
+}
+
+
+.cardPeliculaRyF:hover {
+  border-color: rgb(14, 110, 193);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.55);
+}
+
+.cardPeliculaRyF:hover .card-boton {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+
+}
+
+/* ------------SECCION DE EL SEÑOR DE LOS ANILLOS------------------- */
+/* Contendor del texto y la tarjeta 3D */
+.contenedorPrincipalSeñor {
+  width: 1300px; /* es como el 100 % de la pantalla */
+  height: 560px;
+  margin-top: 1740px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+/* DERECHA= Este lleva la tarjeta 3D */
+.contenedorCardSeñor { 
+  width: 720px;
+  height: 500px;
+  background-image: url('../../../assets/img/colecciones/fondoSeñor.png');
+  grid-area: 1 / 2 / 2 / 3; 
+  padding-top: 100px;
+  padding-left: 300px;
+  margin-right: 0;
+  position: absolute;
+  background-repeat: no-repeats;
+}
+
+
+/* Este es el que contiene las peliculas de Señor Anillos */
+.contenedorPeliculasSeñor {
+  background-color: #01042d;
+  display: grid;
+  grid-template-columns: repeat(3, 230px);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+  width: 760px;
+  height: 400PX;
+  margin-left: 250PX;
+  margin-top: 1380px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+/* ------------ SECCION DE RJURASSIC WORL ------------------- */
+/* Contendor del texto y la tarjeta 3D */
+.contenedorPrincipalJurassic {
+  width: 1300px; /* es como el 100 % de la pantalla */
+  height: 560px;
+  margin-top: 1800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+/* DERECHA= Este lleva la tarjeta 3D */
+.contenedorCardJurassic { 
+  width: 720px;
+  height: 500px;
+  background-image: url('../../../assets/img/colecciones/fondoDinosau.png');
+  grid-area: 1 / 2 / 2 / 3; 
+  padding-top: 100px;
+  padding-left: 300px;
+  margin-right: 0;
+  position: absolute;
+  background-repeat: no-repeats;
+}
+
+/* Este es el que contiene las peliculas de Jurassic World */
+.contenedorPeliculasJurassic {
+  background-color: #01042d;
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+  width: 1000px;
+  height: 750px;
+  margin-left: 150px;
+  margin-top: 1435px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.cardPeliculaJurassic {
+  width: 200px;
+  height: 320px;
+  border-radius: 10px;
+  position: relative;
+  padding: 0;
+  border: 3px solid rgb(14, 110, 193);
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin-left: 20px;
+  margin-top: -20px;
+  box-shadow: 6px 6px 2px 0 rgba(53, 52, 52, 0.77);
+}
+
+
+.cardPeliculaJurassic:hover {
+  border-color: rgb(14, 110, 193);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.55);
+}
+
+.cardPeliculaJurassic:hover .card-boton {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+
+}
+
+/* ------------SECCION DE EL PIRATAS DEL CARIBE------------------- */
+/* Contendor del texto y la tarjeta 3D */
+.contenedorPrincipalPiratas {
+  width: 1300px; /* es como el 100 % de la pantalla */
+  height: 560px;
+  margin-top: 2240px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+/* DERECHA= Este lleva la tarjeta 3D */
+.contenedorCardPiratas { 
+  width: 720px;
+  height: 500px;
+  background-image: url('../../../assets/img/colecciones/fondoCardpiratas.png');
+  grid-area: 1 / 2 / 2 / 3; 
+  padding-top: 100px;
+  padding-left: 300px;
+  margin-right: 0;
+  position: absolute;
+  background-repeat: no-repeats;
+}
+
+
+/* Este es el que contiene las peliculas de PIRATAS DEL CARIBE */
+.contenedorPeliculasPiratas {
+  background-color: #01042d;
+  display: grid;
+  grid-template-columns: repeat(5, 230px);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+  width: 1220px;
+  height: 400PX;
+  margin-left: 60PX;
+  margin-top: 1880px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+/* ------------ SECCION DE TRANSFORMERS ------------------- */
+/* Contendor del texto y la tarjeta 3D */
+.contenedorPrincipalTransformers {
+  width: 1300px; /* es como el 100 % de la pantalla */
+  height: 560px;
+  margin-top: 2335px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+/* DERECHA= Este lleva la tarjeta 3D */
+.contenedorCardTransformers { 
+  width: 720px;
+  height: 500px;
+  background-image: url('../../../assets/img/colecciones/fondoCardTransformers.png');
+  grid-area: 1 / 2 / 2 / 3; 
+  padding-top: 100px;
+  padding-left: 300px;
+  margin-right: 0;
+  position: absolute;
+  background-repeat: no-repeats;
+}
+
+/* Este es el que contiene las peliculas de Transformers */
+.contenedorPeliculasTransformers {
+  background-color: #01042d;
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+  width: 1000PX;
+  height: 600PX;
+  margin-left: 150PX;
+  margin-top: 1970px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.cardPeliculaTransformers {
+  width: 200px;
+  height: 320px;
+  border-radius: 10px;
+  position: relative;
+  padding: 0;
+  border: 3px solid rgb(14, 110, 193);
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin-left: 20px;
+  margin-top: 28px;
+  box-shadow: 6px 6px 2px 0 rgba(53, 52, 52, 0.77);
+}
+
+
+.cardPeliculaTransformers:hover {
+  border-color: rgb(14, 110, 193);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.55);
+}
+
+.cardPeliculaTransformers:hover .card-boton {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+
 }

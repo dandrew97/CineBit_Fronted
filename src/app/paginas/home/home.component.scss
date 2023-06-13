@@ -1,12 +1,12 @@
 *{
     box-sizing:border-box;
-  }
-  body{
+}
+body{
     overflow-x:hidden;
     margin:0;
     padding:0;
     font-family:'Monserrat';
-  }
+}
   
 .contenedorBody {
     background-color: #01042d;
@@ -24,11 +24,11 @@
 }
 
 .titulosPrincipales h5{
-    margin-top: -1%;
+    margin-top: 0;
     font-size: 23px;
 }
 
-/*//? ----  Carrusel con texto 1  ---- */
+/*//? ----  Carrusel con texto ACCION  ---- */
 .texto-y-carrusel {
     display: flex
 }
@@ -419,6 +419,74 @@
       }
     }
   }
+
+/*-- Texto y carrusel DRAMA --*/
+  .texto-y-carrusel-drama {
+    display: flex
+}
+.texto-y-carrusel-drama .textos {
+    background-image: url(../../../assets/img/drama.png);
+    margin-left: 2%;
+    margin-top: 3%;
+    color: #f1eaea;
+    width: 400px;
+    position: relative;
+    height: 265px;
+    width: 700px;
+    font-family: 'Montserrat'
+}
+
+.texto-y-carrusel-drama .textos img {
+    padding-bottom: 15px;
+    height: 68px;
+    width: 150px;
+}
+
+.texto-y-carrusel-drama .textos h2 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 3.7rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    flex-direction: row;
+}
+
+.texto-y-carrusel-drama .textos .texto {
+    margin-top: 15px;
+}
+
+.texto-y-carrusel-drama .textos .texto h6 {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+    flex-direction: row;
+}
+
+.texto-y-carrusel-drama .textos button {
+    margin-top: 15px;
+    position: absolute;
+    width: 179px;
+    height: 53px;
+    background: linear-gradient(92.33deg, #063a83 8.95%, #087bc2 98.37%);
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    box-shadow: 1px 1px 1px 2px rgba(255, 255, 255, 0.476);
+}
+
+.texto-y-carrusel-drama .silderVertical {
+    position: absolute;
+}
   
   
   @media(min-width:320px) and (max-width:580px){
