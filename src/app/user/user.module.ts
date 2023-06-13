@@ -21,7 +21,7 @@ import { FormsModule } from '@angular/forms';
     UserRoutingModule,
     FormsModule,
   ]
-  ]
+  
 })
 
 export class UserModule { }
