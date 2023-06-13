@@ -12,13 +12,15 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     LoginComponent,
     CreateComponent,
-    ProfileComponent
+    ProfileComponent,
+    
   ],
 
   imports: [
     CommonModule,
     UserRoutingModule,
-    FormsModule
+    FormsModule,
+  ]
   ]
 })
 
