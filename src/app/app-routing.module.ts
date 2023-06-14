@@ -20,6 +20,7 @@ import { SeriesComponent } from './subpaginas/series/series.component';
 //! Importación 404 
 import { NotFoundComponent } from './paginas/not-found/not-found.component';
 import { UserComponent } from './user/user.component';
+
 const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
   { path: 'inicio', component: InicioComponent },
