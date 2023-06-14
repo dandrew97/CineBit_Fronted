@@ -19,6 +19,13 @@ import { Top5Component } from './top5/top5.component';
 import { FavoritosComponent } from './favoritos/favoritos.component';
 import { PerfilComponent } from './perfil/perfil.component';
 
+import { CartoonsComponent } from './cartoons/cartoons.component';
+import { ColeccionesComponent } from './colecciones/colecciones.component';
+import { DocumentalesComponent } from './documentales/documentales.component';
+import { GenerosComponent } from './generos/generos.component';
+import { PeliculasComponent } from './peliculas/peliculas.component';
+import { SeriesComponent } from './series/series.component';
+
 import { NavComponent } from '../componentes/nav/nav.component';
 import { FooterComponent } from '../componentes/footer/footer.component';
 import { SliderHorizontalComponent } from '../componentes/slider/slider-horizontal/slider-horizontal.component';
@@ -43,7 +50,14 @@ import { PaginasRoutingModule } from './paginas-routing.module';
     HomeComponent,
     Top5Component,
     FavoritosComponent,
-    PerfilComponent
+    PerfilComponent,
+
+    CartoonsComponent,
+    ColeccionesComponent,
+    DocumentalesComponent,
+    GenerosComponent,
+    PeliculasComponent,
+    SeriesComponent
   ],
   imports: [
     CommonModule,

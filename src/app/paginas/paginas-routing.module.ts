@@ -9,6 +9,13 @@ import { Top5Component } from './top5/top5.component';
 import { FavoritosComponent } from './favoritos/favoritos.component';
 import { PerfilComponent } from './perfil/perfil.component';
 
+import { CartoonsComponent } from './cartoons/cartoons.component';
+import { ColeccionesComponent } from './colecciones/colecciones.component';
+import { DocumentalesComponent } from './documentales/documentales.component';
+import { GenerosComponent } from './generos/generos.component';
+import { PeliculasComponent } from './peliculas/peliculas.component';
+import { SeriesComponent } from './series/series.component';
+
 import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
@@ -21,6 +28,14 @@ const routes: Routes = [
   { path: 'perfil/:idUsuario', component: PerfilComponent },
 
   { path: '404', component: NotFoundComponent },
+
+  {path: 'cartoons', component: CartoonsComponent },
+  {path: 'colecciones', component: ColeccionesComponent},
+  {path: 'documentales', component: DocumentalesComponent},
+  {path: 'generos', component: GenerosComponent},
+  {path: 'peliculas', component: PeliculasComponent},
+  {path:'series', component: SeriesComponent},
+
 ];
 
 @NgModule({
