@@ -110,9 +110,9 @@ body{
 }
 
 .titulo1 h5{
-    font-size: 2.7rem;
-    font-family: 'Montserrat';
-    font-weight: bold;
+  font-size: 2.7rem;
+  font-family: 'Montserrat';
+  font-weight: bold;
 }
 
 .titulo2 h5{
@@ -120,6 +120,12 @@ body{
     font-family: 'Montserrat';
     font-weight: bold;
 }
+
+/* RESPONSIVE TABLETS*/
+@media screen and (min-width: 401px) and (max-width: 1000px) {}
+
+/* RESPONSIVE CELULAR*/
+@media (max-width: 450px) {}
 
 //------------------------------------------------------------------------------------------------------//
 //Carrusel 3 card
