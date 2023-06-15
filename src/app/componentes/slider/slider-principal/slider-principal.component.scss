@@ -39,7 +39,7 @@
 
 /*//? Estilos para el contenido izquierdo */
 .netflix-home-video .content .left{
-    margin-left: 80px;
+    margin-left: 40px;
 }
 
 /*//? Estilos para la imagen en el contenido izquierdo */
@@ -54,7 +54,42 @@
     font-size: 16px;
 }
 
-/*//? Estilos para el contenido derecho */
-.netflix-home-video .content .right{
-    width: 50%;
+/* RESPONSIVE TABLETS*/
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+    /*//? Estilos para la imagen en el contenido izquierdo */
+    .netflix-home-video .content .left img{
+        margin-top: 200px;
+        width: 250px;
+    }
 }
+
+.netflix-home-video .content .left{
+        margin-left: 40px;
+}
+
+/* RESPONSIVE CELULAR*/
+@media screen and (max-width: 450px) {
+    /*//? Estilos para la imagen en el contenido izquierdo */
+    .netflix-home-video .content .left img{
+        margin-top: 80px;
+        width: 100px;
+    }
+    .netflix-home-video .content .left{
+        margin-left: 20px;
+    }
+    
+    .netflix-home-video .content .left p{
+        color: aliceblue;
+        font-size: 6px;
+    }
+
+    .netflix-home-video .content .left .d-flex {
+        button {
+            font-size: 8px;
+            padding: 3px;
+            
+        }
+    }
+}
+
+
