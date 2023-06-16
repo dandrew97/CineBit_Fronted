@@ -2,3 +2,14 @@
 
 html, body { height: 100%; width: 100%; background: #01042d; }
 body { margin: 0; font-family: "Montserrat", sans-serif; font-size: 16px; }
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px; 
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: linear-gradient(90.36deg, #0d15a1 3.28%, #091073 96.22%);
+    border-radius: 25px;
+  }

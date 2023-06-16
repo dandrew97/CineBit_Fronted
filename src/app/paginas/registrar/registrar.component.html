@@ -1,117 +1,119 @@
 <!--! ESTE ES EL CUERPO DE EL FORM DE EL REGISTRO -->
 <section class="contentForm">
   <div class="contentChildren">
-    <!--? Div 1 -->
-    <div class="div1">
-      <title>Crea tu cuenta</title>
-      <p>Accede a una inmensidad de maravilloso contenido</p>
-    </div>
-
     <form (ngSubmit)="create()" #createForm="ngForm">
+      <!--? Div 1 -->
+      <div class="div1">
+        <title>Crea tu cuenta</title>
+        <p>Accede a una inmensidad de maravilloso contenido</p>
+      </div>
 
-    <!--? Div 2: Campo de entrada para el apodo -->
-    <div class="div2">
-      <mat-form-field class="example-full-width ">
-        <mat-label class="transparent-card">Apodo</mat-label>
-        <input [(ngModel)]="username" type="text" name="username" id="username" matInput>
-      </mat-form-field>
-    </div>
 
-    <!--? Div 3: Campo de entrada para el nombre -->
-    <div class="div3">
-      <mat-form-field class="example-full-width">
-        <mat-label>Nombre</mat-label>
-        <input  [(ngModel)]="name" type="text" name="name" id="name" matInput>
-      </mat-form-field>
-    </div>
+      <!--? Div 2: Campo de entrada para el apodo -->
+      <div class="div2">
+        <mat-form-field class="example-full-width ">
+          <mat-label>Apodo</mat-label>
+          <input [(ngModel)]="username" type="text" name="username" id="username" matInput>
+        </mat-form-field>
+      </div>
 
-    <!--? Div 4: Campo de entrada para los apellidos -->
-    <div class="div4">
-      <mat-form-field class="example-full-width">
-        <mat-label>Apellidos</mat-label>
-        <input [(ngModel)]="lastNames" type="text" name="lastNames" id="lastNames" matInput>
-      </mat-form-field>
-    </div>
+      <!--? Div 3: Campo de entrada para el nombre -->
+      <div class="div3">
+        <mat-form-field class="example-full-width">
+          <mat-label>Nombre</mat-label>
+          <input [(ngModel)]="name" type="text" name="name" id="name" matInput>
+        </mat-form-field>
+      </div>
 
-    <!--? Div 5: Campo de entrada para el correo electrónico -->
-    <div class="div5">
-      <mat-form-field class="example-full-width">
-        <mat-label>Email</mat-label>
-        <input [(ngModel)]="email" name="email" id="email" type="email" matInput [formControl]="emailFormControl" placeholder="Ej. pedro@ejemplo.com">
-        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-          Por favor ingrese un Email válido
-        </mat-error>
-        <mat-error *ngIf="emailFormControl.hasError('required')">
-          El Email es <strong>requerido</strong>
-        </mat-error>
-      </mat-form-field>
-    </div>
+      <!--? Div 4: Campo de entrada para los apellidos -->
+      <div class="div4">
+        <mat-form-field class="example-full-width">
+          <mat-label>Apellidos</mat-label>
+          <input [(ngModel)]="lastNames" type="text" name="lastNamess" id="lastNamess" matInput>
+        </mat-form-field>
+      </div>
 
-    <!--? Div 6: Campo de entrada para la contraseña -->
-    <div class="div6">
-      <mat-form-field class="example-full-width">
-                <mat-label>Ingresa tu contraseña</mat-label>
-                <input [(ngModel)]="password" type="password" name="password" id="password" matInput [type]="hide ? 'password' : 'text'">
-                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                </button>      
-      </mat-form-field>
-    </div>
+      <!--? Div 5: Campo de entrada para el correo electrónico -->
+      <div class="div5">
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input [(ngModel)]="email" name="email" id="email" type="email" matInput [formControl]="emailFormControl"
+            placeholder="Ej. pedro@ejemplo.com">
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Por favor ingrese un Email válido
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            El Email es <strong>requerido</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
 
-    <!--? Div 7: Campo de entrada para el teléfono/móvil -->
-    <div class="div7">
-      <mat-form-field class="example-full-width">
-        <mat-label>Teléfono/Móvil</mat-label>
-        <input [(ngModel)]="phone" name="phone" id="phone" type="tel" matInput placeholder="322-360-4914">
-        <mat-icon matSuffix><i class="bi bi-telephone"></i></mat-icon>
-      </mat-form-field>
-    </div>
-
-    <!--? Div 8: Selector para el tipo de perfil -->
-    <div class="div8">
-      <mat-form-field class="example-full-width">
-        <mat-label>Qué tipo de perfil prefieres</mat-label>
-        <mat-select>
-          <mat-option value="one">Perfil para adulto</mat-option>
-          <mat-option value="two">Perfil para niño</mat-option>
-        </mat-select>
-      </mat-form-field>
-    </div>
-
-    <!--? Div 9: Campo de entrada para preferencias utilizando mat-chip -->
-    <div class="div9">
-      <!--* <mat-label>'Preferencias'</mat-label> -->
-      <mat-chip-grid #chipGrid aria-label="Enter fruits">
-        <!--? Iterar sobre la lista de frutas y mostrar los chips -->
-        <mat-chip-row *ngFor="let fruit of fruits"
-                      (removed)="remove(fruit)"
-                      [editable]="true"
-                      (edited)="edit(fruit, $event)"
-                      [aria-description]="'press enter to edit ' + fruit.name">
-          {{fruit.name}}
-          <button matChipRemove [attr.aria-label]="'remove ' + fruit.name">
-            <mat-icon><i class="bi bi-x"></i></mat-icon>
+      <!--? Div 6: Campo de entrada para la contraseña -->
+      <div class="div6">
+        <mat-form-field class="example-full-width">
+          <mat-label>Ingresa tu contraseña</mat-label>
+          <input [(ngModel)]="password" type="password" name="password" id="password" matInput
+            [type]="hide ? 'password' : 'text'">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
           </button>
-        </mat-chip-row>
+        </mat-form-field>
+      </div>
 
-        <!--? Campo de entrada para agregar nuevas frutas -->
-        <input placeholder="New fruit..."
-               [matChipInputFor]="chipGrid"
-               [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-               [matChipInputAddOnBlur]="addOnBlur"
-               (matChipInputTokenEnd)="add($event)"/>
-      </mat-chip-grid>
-    </div>
+      <!--? Div 7: Campo de entrada para el teléfono/móvil -->
+      <div class="div7">
+        <mat-form-field class="example-full-width">
+          <mat-label>Teléfono/Móvil</mat-label>
+          <input [(ngModel)]="phone" name="phone" id="phone" type="tel" matInput placeholder="322-360-4914">
+          <mat-icon matSuffix><i class="bi bi-telephone"></i></mat-icon>
+        </mat-form-field>
+      </div>
 
-    <!--? Div 10 -->
-    <div class="div10">
-      <p>Al hacer clic en Crear cuenta, confirmas que aceptas los Términos de Uso y reconoces que has leído y aceptado nuestra Política de Privacidad. Además, reconoces que te enviaremos ofertas de marketing, promociones y otras ofertas de CineBit y sus Afiliadas por e-mail, redes sociales y otros canales. Si creas un Perfil Infantil, aceptas el procesamiento de la información personal recopilada a través de ese perfil de acuerdo a la Política de Privacidad, si dicho consentimiento es requerido por tús tutores legales.</p>
-    </div>
+      <!--? Div 8: Selector para el tipo de perfil -->
+      <div class="div8">
+        <mat-form-field class="example-full-width">
+          <mat-label>Qué tipo de perfil prefieres</mat-label>
+          <mat-select>
+            <mat-option value="one">Perfil para adulto</mat-option>
+            <mat-option value="two">Perfil para niño</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
 
-    <!--? Div 11: Botón para crear cuenta -->
-    <div class="div11">
-      <button >Crear cuenta</button>
-    </div>
-  </form>
+      <!--? Div 9: Campo de entrada para preferencias utilizando mat-chip -->
+      <div class="div9">
+        <!--* <mat-label>'Preferencias'</mat-label> -->
+        <mat-chip-grid #chipGrid aria-label="Enter fruits">
+          <!--? Iterar sobre la lista de frutas y mostrar los chips -->
+          <mat-chip-row *ngFor="let fruit of fruits" (removed)="remove(fruit)" [editable]="true"
+            (edited)="edit(fruit, $event)" [aria-description]="'press enter to edit ' + fruit.name">
+            {{fruit.name}}
+            <button matChipRemove [attr.aria-label]="'remove ' + fruit.name">
+              <mat-icon><i class="bi bi-x"></i></mat-icon>
+            </button>
+          </mat-chip-row>
+
+          <!--? Campo de entrada para agregar nuevas frutas -->
+          <input placeholder="New fruit..." [matChipInputFor]="chipGrid"
+            [matChipInputSeparatorKeyCodes]="separatorKeysCodes" [matChipInputAddOnBlur]="addOnBlur"
+            (matChipInputTokenEnd)="add($event)" />
+        </mat-chip-grid>
+      </div>
+
+      <!--? Div 10 -->
+      <div class="div10">
+        <p>Al hacer clic en Crear cuenta, confirmas que aceptas los Términos de Uso y reconoces que has leído y aceptado
+          nuestra Política de Privacidad. Además, reconoces que te enviaremos ofertas de marketing, promociones y otras
+          ofertas de CineBit y sus Afiliadas por e-mail, redes sociales y otros canales. Si creas un Perfil Infantil,
+          aceptas el procesamiento de la información personal recopilada a través de ese perfil de acuerdo a la Política
+          de Privacidad, si dicho consentimiento es requerido por tús tutores legales.</p>
+      </div>
+
+      <!--? Div 11: Botón para crear cuenta -->
+      <div class="div11">
+        <button>Crear cuenta</button>
+      </div>
+    </form>
   </div>
 </section>

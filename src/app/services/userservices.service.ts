@@ -53,6 +53,7 @@ export class UserservicesService {
     this.http.post(createUrl, formData).subscribe(
       (response: any) => {
         console.log('Registro exitoso:', response);
+        this.router.navigate(['/user/login']);
       },
       (error) => {
         console.log("Error:", error);

@@ -1,44 +1,73 @@
-<div class="Principal">
-  <div class="form-container">
-      <p class="ittle">Registrar</p>
-      <form (ngSubmit)="create()" #createForm="ngForm">
-         
-        <div class="input-group">
-              <label for="">Usuario</label>
-              <input [(ngModel)]="username" type="text" name="username" id="username" placeholder="" required>
-              <div class="forgot">
+<div class="scroll-down">Baja un poco
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path
+            d="M16 3C8.832031 3 3 8.832031 3 16s5.832031 13 13 13 13-5.832031 13-13S23.167969 3 16 3zm0 2c6.085938 0 11 4.914063 11 11 0 6.085938-4.914062 11-11 11-6.085937 0-11-4.914062-11-11C5 9.914063 9.914063 5 16 5zm-1 4v10.28125l-4-4-1.40625 1.4375L16 23.125l6.40625-6.40625L21 15.28125l-4 4V9z" />
+    </svg>
+</div>
 
-              </div>
-              <label for="">Nombre</label>
-              <input [(ngModel)]="name" type="text" name="name" id="name" placeholder="" required>
-              <div class="forgot">
+<div class="container"></div>
+<div class="modal">
+    <div class=" Principal modal-container">
+        <div class="form-container modal-left">
+            <h1 class="modal-title">Bienvenido, crea una cuenta!</h1>
+            <p class="modal-desc">Accede a una cantidad inmensa de contenido</p>
 
-              </div>
-              <label for="">Apellido</label>
-              <input [(ngModel)]="lastNames" type="text" name="lastNames" id="lastNames" placeholder="" required>
-              <div class="forgot">
+            <form (ngSubmit)="create()" #createForm="ngForm">
 
-              </div>
+                <div class="input-block">
+                    <label for="email" class="input-label">Apodo</label>
+                    <input required [(ngModel)]="username" type="text" name="Username" id="Username" placeholder="Apodo">
+                </div>
 
-              <div class="input-group">
-                  <label for="">email</label>
-                  <input [(ngModel)]="email" type="email" name="email" id="email" placeholder="" required>
-              </div>
-              <div class="input-group">
-                  <label for="">Telephono</label>
-                  <input [(ngModel)]="phone" type="phone" name="phone" id="phone" placeholder="" required>
-              </div>
+                <div class="input-block">
+                    <label for="name" class="input-label">nombre</label>
+                    <input required [(ngModel)]="name" type="text" name="name" id="name" placeholder="Nombre">
+                </div>
 
-              <div class="input-group">
-                  <label for="password">Contraseña</label>
-                  <input [(ngModel)]="password" type="password" name="password" id="password" placeholder="" required>
-                  <div class="forgot">
-                      <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
-                  </div>
-              </div>
-              <button type="submit" class="sign" [disabled]="!createForm.form.valid">Registrar</button>
-          </div>
-      </form>
+                <div class="input-block">
+                    <label for="lastNames" class="input-label">Apellidos</label>
+                    <input required [(ngModel)]="lastNames" type="text" name="lastNames" id="lastNames" placeholder="Apellidos">
+                </div>
 
-  </div>
+                <div class="input-block">
+                    <label for="email" class="input-label">Email</label>
+                    <input required [(ngModel)]="email" type="email" name="email" id="email" placeholder="Email">
+                </div>
+
+                <div class="input-block">
+                    <label for="phone" class="input-label">Telefono</label>
+                    <input required [(ngModel)]="phone" type="tel" name="phone" id="phone" placeholder="Telefono">
+                </div>
+
+                <select style="background-color: transparent; color: #f6f6f6;" class="input-block form-select" aria-label="Default select example">
+                    <option type="boolean" name="isChildProfile" id="isChildProfile"
+                        selected>Adulto</option>
+                    <option value="1">Infante</option>
+                </select>
+
+                <div class="input-block">
+                    <label for="password" class="input-label">Contraseña</label>
+                    <input required [(ngModel)]="password" type="password" name="password" id="password" placeholder="Password">
+                </div>
+
+                <div class="modal-buttons">
+                    <a routerLink="/user/login" >¿Ya tienes una cuenta creada?</a>
+                    <button class="input-button sign" type="submit" [disabled]="!createForm.form.valid">Registrar</button>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="modal-right">
+            <img src="../../../assets/imgTemplates/Home.jpg" alt="">
+        </div>
+        <button class="icon-button close-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                <path
+                    d="M 25 3 C 12.86158 3 3 12.86158 3 25 C 3 37.13842 12.86158 47 25 47 C 37.13842 47 47 37.13842 47 25 C 47 12.86158 37.13842 3 25 3 z M 25 5 C 36.05754 5 45 13.94246 45 25 C 45 36.05754 36.05754 45 25 45 C 13.94246 45 5 36.05754 5 25 C 5 13.94246 13.94246 5 25 5 z M 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.980469 15.990234 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 z">
+                </path>
+            </svg>
+        </button>
+    </div>
+    <button class="modal-button">Click para registrarte</button>
 </div>

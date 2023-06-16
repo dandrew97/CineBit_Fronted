@@ -29,6 +29,8 @@ i{
   margin: auto; 
   margin-top: 10vh; 
   padding-bottom: 25px;
+  padding-left: 5%;
+  padding-right: 5%;
   display: flex; 
   justify-content: center; 
   align-items: center; 
@@ -42,7 +44,7 @@ i{
 /*//* Estilos del contenedor de los elementos hijos */
 .contentChildren {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 0;
