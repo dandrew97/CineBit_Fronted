@@ -1,6 +1,5 @@
+import { UserservicesService } from "src/app/services/userservices.service";
 import { Component } from '@angular/core';
-import { UserservicesService } from 'src/app/services/userservices.service';
-
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -24,6 +23,8 @@ export class ProfileComponent {
   }
 
   getUser(){
+
+    console.log(this.userProfile)
      this.UserService.getUser()
      .subscribe(
       ( response:any) =>{
@@ -37,16 +38,8 @@ export class ProfileComponent {
   }
   cancelUpdate(){
 this.editValue=false;
-   
-
   }
-
- 
- 
   onFileSelected(event:any){
-
     this.selectFile = event.target.files[0];
-
   }
 }
-
