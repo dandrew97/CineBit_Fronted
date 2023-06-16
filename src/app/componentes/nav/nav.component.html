@@ -24,32 +24,32 @@
           <!--? Sección de contenido del menú -->
           <section class="navBarSectionContenido">
             <div class="divNavBarSection">
-              <h5 href="peliculas">Películas</h5>
-              <h5 href="series">Series</h5>
-              <h5 href="cartoons">Cartoons</h5>
-              <h5 href="documentales">Documentales</h5>
+              <h5 routerLink="/paginas/peliculas">Películas</h5>
+              <h5 routerLink="/paginas/series">Series</h5>
+              <h5 routerLink="/paginas/cartoons">Cartoons</h5>
+              <h5 routerLink="/paginas/documentales">Documentales</h5>
             </div>
             <div class="divNavBarSectionOtros">
-              <h5 href="generos">Géneros<i class="iconNav bi bi-film"></i></h5>
-              <h5 href="colecciones">Explora<i class="iconNav bi bi-collection-play-fill"></i>
+              <h5 routerLink="/paginas/Generos">Géneros<i class="iconNav bi bi-film"></i></h5>
+              <h5 routerLink="/paginas/colecciones">Colecciones<i class="iconNav bi bi-collection-play-fill"></i>
               </h5>
             </div>
           </section>
 
           <!--? Sección de favoritos -->
           <section class="navBarSectionFavoritos">
-            <i href="favoritos" class="iconNavStar bi bi-star-fill"></i>
+            <i routerLink="/paginas/favoritos" class="iconNavStar bi bi-star-fill"></i>
           </section>
 
           <!--? Sección del perfil -->
           <section class="navBarSectionPerfil">
-            <p href="perfil">
+            <p routerLink="/paginas/perfil">
               Mi perfil <i class="iconNav bi bi-chevron-right"></i>
             </p>
-            <p href="registrar">
+            <p routerLink="/user/create">
               Crear perfil <i class="iconNav bi bi-plus"></i>
             </p>
-            <p href="inicio">
+            <p routerLink="/paginas/inicio">
               Cerrar sesión <i class="iconNav bi bi-chevron-left"></i>
             </p>
           </section>
@@ -62,7 +62,7 @@
             <p url="https://github.com/StivenTorres17/CineBit-Backend.git">
               Contactanos
             </p>
-            <p>CineBit<i class="iconNavSection5 bi bi-cc-circle"></i></p>
+            <p routerLink="/paginas/home" >CineBit<i routerLink="/paginas/home" class="iconNavSection5 bi bi-cc-circle"></i></p>
           </section>
         </div>
       </div>
@@ -70,19 +70,19 @@
     <div class="divNav">
       <ul>
         <li>
-          <i class="iconNav fa-solid fa-house"></i><a routerLink="home">Home</a>
+          <i class="iconNav fa-solid fa-house"></i><a routerLink="/paginas/home">Home</a>
         </li>
         <li>
-          <i class="iconNav fa-solid fa-ranking-star"></i><a href="top5">Top 5</a>
+          <i class="iconNav fa-solid fa-ranking-star"></i><a routerLink="/paginas/top5">Top 5</a>
         </li>
         <li>
-          <i class="iconNav bi bi-collection-play"></i><a href="colecciones">Colecciones</a>
+          <i class="iconNav bi bi-collection-play"></i><a routerLink="/paginas/colecciones">Colecciones</a>
         </li>
       </ul>
     </div>
   </div>
   <div class="middle-section">
-    <a href="home"> <img src="../../../assets/img/logoCineBit.png" alt=""> </a>
+    <a routerLink="/paginas/home"> <img src="../../../assets/img/logoCineBit.png" alt=""> </a>
   </div>
   <div class="right-section">
     <!--? Input de búsqueda -->
@@ -138,7 +138,7 @@
       </div>
     </div>
     <div class="col">
-      <i href="favoritos" class="iconNavStarFooter bi bi-star-fill"></i> <!-- Icono de estrella rellena -->
+      <i routerLink="/paginas/favoritos" class="iconNavStarFooter bi bi-star-fill"></i> <!-- Icono de estrella rellena -->
     </div>
   </div>
 </footer>
