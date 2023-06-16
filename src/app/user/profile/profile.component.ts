@@ -42,4 +42,5 @@ this.editValue=false;
   onFileSelected(event:any){
     this.selectFile = event.target.files[0];
   }
+  
 }
