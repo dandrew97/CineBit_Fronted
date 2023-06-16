@@ -1,15 +1,4 @@
 @import '~mdb-ui-kit/css/mdb.min.css';
 
-html,
-body {
-    height: 100%;
-    width: 100%;
-    
-    
-}
-
-body {
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-}
+html, body { height: 100%; width: 100%; background: #01042d; }
+body { margin: 0; font-family: "Montserrat", sans-serif; font-size: 16px; }

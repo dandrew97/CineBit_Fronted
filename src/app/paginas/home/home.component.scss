@@ -122,10 +122,228 @@ body{
 }
 
 /* RESPONSIVE TABLETS*/
-@media screen and (min-width: 401px) and (max-width: 1000px) {}
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+  /* TEXTO Y CARRUSEL ACCION  */
+  .texto-y-carrusel {
+    display: flex
+  }
+  .texto-y-carrusel .textos {
+    background-image: url(../../../assets/img/accion.png);
+    margin-left: 2%;
+    margin-top: 3%;
+    color: #f1eaea;
+    width: 400px;
+    position: relative;
+    height: 265px;
+    width: 700px;
+    font-family: 'Montserrat'
+  }
+
+  .texto-y-carrusel .textos img {
+    padding-bottom: 15px;
+    height: 68px;
+    width: 150px;
+  }
+
+  .texto-y-carrusel .textos h2 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    flex-direction: row;
+  }
+
+  .texto-y-carrusel .textos .texto {
+    margin-top: 15px;
+  }
+
+  .texto-y-carrusel .textos .texto h6 {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+    flex-direction: row;
+  }
+
+  .texto-y-carrusel .textos button {
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(92.33deg, #063a83 8.95%, #087bc2 98.37%);
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    box-shadow: 1px 1px 1px 2px rgba(255, 255, 255, 0.476);
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+  /* TEXTO Y CARRUSEL DRAMA */
+  .texto-y-carrusel-drama {
+    display: flex
+  }
+  .texto-y-carrusel-drama .textos {
+      background-image: url(../../../assets/img/drama.png);
+      margin-left: 2%;
+      margin-top: 3%;
+      color: #f1eaea;
+      width: 400px;
+      position: relative;
+      height: 265px;
+      width: 700px;
+      font-family: 'Montserrat'
+  }
+  
+  .texto-y-carrusel-drama .textos img {
+      padding-bottom: 15px;
+      height: 68px;
+      width: 150px;
+  }
+  
+  .texto-y-carrusel-drama .textos h2 {
+      margin-top: 5px;
+      margin-bottom: 0;
+      padding: 0;
+      font-family: 'Montserrat';
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 0.2rem;
+      flex-direction: row;
+  }
+  
+  .texto-y-carrusel-drama .textos .texto {
+      margin-top: 15px;
+  }
+  
+  .texto-y-carrusel-drama .textos .texto h6 {
+      margin-top: 5px;
+      margin-bottom: 3px;
+      padding: 0;
+      font-family: 'Montserrat';
+      font-size: 2rem;
+      font-weight: normal;
+      letter-spacing: 0.2rem;
+      flex-direction: row;
+  }
+  
+  .texto-y-carrusel-drama .textos button {
+      margin-top: 15px;
+      position: absolute;
+      width: 179px;
+      height: 53px;
+      background: linear-gradient(92.33deg, #063a83 8.95%, #087bc2 98.37%);
+      border-radius: 50px;
+      border: none;
+      color: #fff;
+      font-size: 1.8rem;
+      font-family: 'Montserrat';
+      font-weight: bold;
+      letter-spacing: 0.4rem;
+      box-shadow: 1px 1px 1px 2px rgba(255, 255, 255, 0.476);
+  }
+}
 
 /* RESPONSIVE CELULAR*/
-@media (max-width: 450px) {}
+@media (max-width: 450px) {
+  /* TEXTO Y CARRUSEL ACCION  */
+  .texto-y-carrusel {
+    display: flex
+  }
+  .texto-y-carrusel .textos {
+    background-image: none;
+    height: 200px;
+  }
+  .texto-y-carrusel .textos img {
+    margin-top: 30px;
+    padding-bottom: 15px;
+    height: 68px;
+    width: 150px;
+  }
+
+  .texto-y-carrusel .textos h2 {
+   display: none;
+  }
+
+  .texto-y-carrusel .textos .texto {
+    margin-top: 15px;
+  }
+
+  .texto-y-carrusel .textos .texto h6 {
+   display: none;
+  }
+
+  .texto-y-carrusel .textos button {
+    width: 120px;
+    height: 30px;
+    background: linear-gradient(92.33deg, #063a83 8.95%, #087bc2 98.37%);
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-size: 1.0rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    box-shadow: 1px 1px 1px 2px rgba(255, 255, 255, 0.476);
+  }
+
+  /* TEXTO Y CARRUSEL DRAMA */
+  .texto-y-carrusel-drama {
+    display: flex
+  }
+  .texto-y-carrusel-drama .textos {
+      background-image: none;
+      height: 200px;
+  }
+  
+  .texto-y-carrusel-drama .textos img {
+      padding-bottom: 15px;
+      height: 68px;
+      width: 150px;
+  }
+  
+  .texto-y-carrusel-drama .textos h2 {
+    display: none;
+  }
+  
+  .texto-y-carrusel-drama .textos .texto {
+      margin-top: 15px;
+  }
+  
+  .texto-y-carrusel-drama .textos .texto h6 {
+      display: none;
+  }
+  
+  .texto-y-carrusel-drama .textos button {
+      margin-top: 15px;
+      position: absolute;
+      width: 150px;
+      height: 30px;
+      background: linear-gradient(92.33deg, #063a83 8.95%, #087bc2 98.37%);
+      border-radius: 50px;
+      border: none;
+      color: #fff;
+      font-size: 1rem;
+      font-family: 'Montserrat';
+      font-weight: bold;
+      letter-spacing: 0.4rem;
+      box-shadow: 1px 1px 1px 2px rgba(255, 255, 255, 0.476);
+  }
+
+  .titulo2 {
+    color: #f1eaea;
+    margin-left: 2%;
+    margin-top: 20px;
+}
+}
 
 //------------------------------------------------------------------------------------------------------//
 //Carrusel 3 card
@@ -427,8 +645,8 @@ body{
   }
 
 /*-- Texto y carrusel DRAMA --*/
-  .texto-y-carrusel-drama {
-    display: flex
+.texto-y-carrusel-drama {
+  display: flex
 }
 .texto-y-carrusel-drama .textos {
     background-image: url(../../../assets/img/drama.png);

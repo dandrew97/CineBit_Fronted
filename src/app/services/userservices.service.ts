@@ -6,75 +6,83 @@ import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http
 })
 export class UserservicesService {
 
-  private userEmail!:string;
-  private  userData!:string;
-  private apiUrl = 'http://localhost:3000/users';
+  private userEmail!: string;
+  private apiUrl = "http://localhost:3000/users";
+  private userData!:string;
 
   constructor(private http: HttpClient) { }
 
   login(email: string, password: string): void {
-    const loginUrl = `${this.apiUrl}/login`
+    const loginUrl = `${this.apiUrl}/login`;
     const formData = {
       email: email,
       password: password
+    };
+    this.http.post(loginUrl, formData, { headers: this.getAuthHeaders() })
+      .subscribe(
+        (response: any) => {
+          localStorage.setItem("token", response.token);
+          console.log('Respuesta:', response);
+          this.userEmail = email;
+        },
+        (error) => {
+          if(error instanceof HttpErrorResponse){
+            if(error.error instanceof ErrorEvent){
+              console.log("Error: ", error.error.message);
+            }
+          else {
+            console.error(`codigo de error ${error.status}` + `mensaje: ${error.error}`)
+          }
+          }
+        }
+      )
     }
-    this.http.post(loginUrl, formData,{headers:this.getAuthHeaders()})
-    .subscribe(
-      (response:any) => {
-        // this.authToken = response.accessToken;
-        localStorage.setItem("token",response.token)
-        console.log('Respuesta:', response);
-        this.userEmail = formData.email
+
+  create(username: string, name: string, lastNames: string, email: string, phone: string, password: string): void {
+    const createUrl = `${this.apiUrl}/create`;
+    const formData = {
+      username: username,
+      name: name,
+      lastNames: lastNames,
+      email: email,
+      phone: phone,
+      password: password
+    };
+    this.http.post(createUrl, formData).subscribe(
+      (response: any) => {
+        console.log('Registro exitoso:', response);
       },
       (error) => {
-        if(error instanceof HttpErrorResponse){
-          if(error.error instanceof ErrorEvent) {
-            console.log('Error:', error.error.message);
-          }
-        } else {
-          console.error(`Codigo de error ${error.status}` + `mensaje: ${error.error}`);
-        }
+        console.log("Error:", error);
+      }
+    );
+  }
+
+  getUser() {
+    const getUrl = `${this.apiUrl}/${this.userEmail}`;
+    return this.http.get(getUrl);
+  }
+
+  updateUser(body:any) {
+    const updateUrl = `${this.apiUrl}/update/${body._id}`
+    const formData = body
+
+    console.log("Usuario actualizado con éxito", formData, updateUrl);
+
+    this.http.put(updateUrl,formData)
+    .subscribe(
+      (response:any) => {
+        console.log("Usuario actualizado con éxito. ", response);
+      },
+      (error) => {
+        console.log("Error: ", error);
       }
     )
   }
-  create(username:string,name:string,lastNames:string,email:string,phone:string,password:string):void{
-    const CreateUrl = `${this.apiUrl}/create`
-    const formData = {
-      username:username,
-      name:name,
-      lastNames:lastNames,
-      email:email,
-      phone:phone,
-      password:password
-     }
-     this.http.post(CreateUrl,formData).subscribe(
-      (response:any)=>{
-        console.log('Resgistro exitoso:', response);
-      },
-      (error)=>{
-        console.log("Error", error)
-      }
-     )
-  }
 
-getUser(){
-   
-  const getUrl =  `${this.apiUrl}/${this.userEmail}`;
-  return this.http.get(getUrl) 
-}
-
-updateUser(){
-
-  const updateUrl =  `${this.apiUrl}
-  
-  // // /    ${this.userEmail}`;
- 
-
-}
-
-  getAuthHeaders():HttpHeaders{
+  getAuthHeaders(): HttpHeaders {
     const authToken = localStorage.getItem("token");
-    const headers= new HttpHeaders({"Authorization":`Bearer  ${authToken}`});
+    const headers = new HttpHeaders({ "Authorization": `Bearer ${authToken}` });
     return headers;
-  } 
- };
+  }
+}
