@@ -1,4 +1,9 @@
 
+
+.slider{
+
+  padding-top: 20px;
+}
 .Contenedor {
   background: linear-gradient(180deg, #000000 -21.91%, #080F68 94.16%);
   
@@ -55,7 +60,7 @@ col-6 {
   top: 0;
   left: 0;
   width: 100%;
-  background: #080F68;
+  background: linear-gradient(180deg, #000000 -21.91%, #080F68 94.16%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -86,6 +91,16 @@ col-6 {
 }
 
 @media only screen and (max-width: 600px) {
+  .header {
+  margin: -20px;
+  padding: -60px;
+  }
+  
+  .slider{
+
+    padding-top: 100px;
+  }
+
   .title {
     font-size: 1px;
   }
@@ -168,11 +183,19 @@ body {
   .card {
     flex-basis: 30
   }
+  .slider{
+
+    padding-top: 20px;
+  }
 }
 
 @media (max-width: 320px) {
   .header {
     padding: 10px;
+  }
+  .slider{
+
+    padding-top: 20px;
   }
 
   .title {
@@ -188,7 +211,10 @@ body {
   .title {
     font-size: 1px;
   }
+.slider{
 
+  padding-top: 20px;
+}
   .buttons button {
     padding-right: 10px;
     font-size: 1rem;
@@ -198,7 +224,7 @@ body {
     flex-direction: column;
     align-items: center;
     height: auto;
-    width: 90%;
+    width: 100%;
   }
 
   .title a {
@@ -223,13 +249,16 @@ body {
     flex-direction: column;
     align-items: center;
     height: auto;
-    width: 90%;
+    width: 100%;
   }
 
   .title a {
     margin-bottom: 10px;
   }
+  .slider{
 
+    padding-top: 20px;
+  }
   .buttons {
     padding-top: 6px;
     flex-direction: row;
@@ -251,6 +280,11 @@ body {
 
   .card.large {
     flex-basis: 70%;
+  }
+
+  .slider{
+
+    padding-top: 20px;
   }
 }
 
