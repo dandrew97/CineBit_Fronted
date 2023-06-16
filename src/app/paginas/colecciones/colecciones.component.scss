@@ -110,7 +110,7 @@ p {
 .contenedorTexto { 
   width: 850px;
   height: 500px;
-  background-image: url('../../../assets/img/colecciones/fondoTexto.png');
+  background-image: url('https://github.com/dandrew97/Imagenes_CineBit/blob/main/fondoTexto.png?raw=true');
   grid-area: 1 / 1 / 2 / 2; 
   position: absolute;
   /* El fondo es negro */
@@ -153,9 +153,9 @@ p {
 
 /* DERECHO= Este lleva la tarjeta 3D */
 .contenedorCard { 
-  width: 720px;
+  width: 720px; 
   height: 500px;
-  background-image: url('../../../assets/img/colecciones/fondoCard.png');
+  background-image: url('https://github.com/dandrew97/Imagenes_CineBit/blob/main/marvel/fondoCard.png?raw=true');
   grid-area: 1 / 2 / 2 / 3; 
   padding-top: 100px;
   padding-left: 300px;
@@ -385,7 +385,7 @@ p {
 .contenedorCardStar { 
   width: 720px;
   height: 500px;
-  background-image: url('../../../assets/img/colecciones/fondoCardstarwars.png');
+  background-image: url('https://github.com/dandrew97/Imagenes_CineBit/blob/main/starWars/fondoCardstarwars.png?raw=true');
   grid-area: 1 / 2 / 2 / 3; 
   padding-top: 100px;
   padding-left: 300px;
@@ -431,7 +431,7 @@ p {
 .contenedorCardHarry { 
   width: 720px;
   height: 500px;
-  background-image: url('../../../assets/img/colecciones/fondoCardHarry.png');
+  background-image: url('https://github.com/dandrew97/Imagenes_CineBit/blob/main/harryPotter/fondoCardHarry.png?raw=true');
   grid-area: 1 / 2 / 2 / 3; 
   padding-top: 100px;
   padding-left: 300px;
@@ -490,7 +490,7 @@ p {
 .contenedorCardJames { 
   width: 720px;
   height: 500px;
-  background-image: url('../../../assets/img/colecciones/fondoJames.png');
+  background-image: url('https://github.com/dandrew97/Imagenes_CineBit/blob/main/jamesBond/fondoJames.png?raw=true');
   grid-area: 1 / 2 / 2 / 3; 
   padding-top: 100px;
   padding-left: 300px;
@@ -535,7 +535,7 @@ p {
 .contenedorCardRyF { 
   width: 720px;
   height: 500px;
-  background-image: url('../../../assets/img/colecciones/fondoRyF.png');
+  background-image: url('https://github.com/dandrew97/Imagenes_CineBit/blob/main/rapidos/fondoRyF.png?raw=true');
   grid-area: 1 / 2 / 2 / 3; 
   padding-top: 100px;
   padding-left: 300px;
@@ -606,7 +606,7 @@ p {
 .contenedorCardSeñor { 
   width: 720px;
   height: 500px;
-  background-image: url('../../../assets/img/colecciones/fondoSeñor.png');
+  background-image: url('https://github.com/dandrew97/Imagenes_CineBit/blob/main/ElSe%C3%B1orDeLosAnillos/fondoSe%C3%B1or.png?raw=true');
   grid-area: 1 / 2 / 2 / 3; 
   padding-top: 100px;
   padding-left: 300px;
@@ -652,7 +652,7 @@ p {
 .contenedorCardJurassic { 
   width: 720px;
   height: 500px;
-  background-image: url('../../../assets/img/colecciones/fondoDinosau.png');
+  background-image: url('https://github.com/dandrew97/Imagenes_CineBit/blob/main/jurassicWorld/fondoDinosau.png?raw=true');
   grid-area: 1 / 2 / 2 / 3; 
   padding-top: 100px;
   padding-left: 300px;
@@ -723,7 +723,7 @@ p {
 .contenedorCardPiratas { 
   width: 720px;
   height: 500px;
-  background-image: url('../../../assets/img/colecciones/fondoCardpiratas.png');
+  background-image: url('https://github.com/dandrew97/Imagenes_CineBit/blob/main/piratasDelCaribe/fondoCardpiratas.png?raw=true');
   grid-area: 1 / 2 / 2 / 3; 
   padding-top: 100px;
   padding-left: 300px;
@@ -769,7 +769,7 @@ p {
 .contenedorCardTransformers { 
   width: 720px;
   height: 500px;
-  background-image: url('../../../assets/img/colecciones/fondoCardTransformers.png');
+  background-image: url('https://github.com/dandrew97/Imagenes_CineBit/blob/main/transformers/fondoCardTransformers.png?raw=true');
   grid-area: 1 / 2 / 2 / 3; 
   padding-top: 100px;
   padding-left: 300px;
