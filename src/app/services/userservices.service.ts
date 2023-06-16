@@ -22,8 +22,8 @@ export class UserservicesService {
       .subscribe(
         (response: any) => {
           localStorage.setItem("token", response.token);
-          console.log('Respuesta:', response);
-          this.userEmail = email;
+          this.userEmail=formData.email;
+          console.log("este es el email login", this.userEmail);
         },
         (error) => {
           if(error instanceof HttpErrorResponse){
@@ -60,6 +60,7 @@ export class UserservicesService {
 
   getUser() {
     const getUrl = `${this.apiUrl}/${this.userEmail}`;
+    console.log(getUrl);
     return this.http.get(getUrl);
   }
 

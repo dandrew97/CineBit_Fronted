@@ -4,9 +4,8 @@ import { FormControl, Validators } from '@angular/forms';
 import { COMMA, ENTER } from '@angular/cdk/keycodes';
 import { MatChipEditedEvent, MatChipInputEvent, MatChipsModule } from '@angular/material/chips';
 import {ThemePalette} from '@angular/material/core';
-import {FormsModule} from '@angular/forms';
-import {NgFor} from '@angular/common';
-import {MatCheckboxModule} from '@angular/material/checkbox';
+
+import { UserservicesService } from 'src/app/services/userservices.service';
 
 //? Interfaz para las frutas
 export interface Fruit {
@@ -26,6 +25,25 @@ export interface Task {
   styleUrls: ['./registrar.component.scss']
 })
 export class RegistrarComponent {
+
+  username!:string;
+  name!:string;
+  lastNames!:string;
+  email!:string;
+  phone!:string;
+  password!:string;
+
+  constructor( private userService:UserservicesService){}
+  
+  
+  create():void{
+
+    this.userService.create(this.username,this.name,this.lastNames,this.email,this.phone,this.password);
+
+    console.log("Usuario creado con Exito")
+  }
+  
+
   //? Control para el campo de correo electrónico
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
   hide = true;
