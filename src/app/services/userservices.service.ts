@@ -77,6 +77,7 @@ export class UserservicesService {
     .subscribe(
       (response:any) => {
         console.log("Usuario actualizado con éxito. ", response);
+        this.router.navigate(['/user/profile']);
       },
       (error) => {
         console.log("Error: ", error);

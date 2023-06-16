@@ -4,10 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 //TODO: Importación de los componentes utilizados en las rutas
 import { PaginasComponent } from './paginas/paginas.component';
+import { InicioComponent } from './paginas/inicio/inicio.component';
 import { UserComponent } from './user/user.component';
 
 //TODO: Definición de las rutas de la aplicación
 const routes: Routes = [
+  {path: '', component: InicioComponent},
   {
     path: 'paginas',
     component: PaginasComponent,
