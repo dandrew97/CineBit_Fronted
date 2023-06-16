@@ -1,0 +1,226 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    overflow-x:hidden;
+    margin:0;
+    padding:0;
+    font-family:'Monserrat';
+}
+  
+.contenedorBody {
+    background-color: #01042d;
+}
+
+/* ---- ---- Carrusel Completo ---- ---- */
+.titulo1 {
+    color: #f1eaea;
+    margin-left: 2%;
+    margin-top: 40px;
+}
+
+.titulo1 h5{
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+/*//? ----  Carrusel con texto ACCION  ---- */
+.texto-y-carrusel {
+    display: flex;
+    margin-bottom: 80px;
+}
+.texto-y-carrusel .textos {
+    background-image: url(../../../assets/img/accion.png);
+    margin-left: 2%;
+    margin-top: 3%;
+    color: #f1eaea;
+    width: 400px;
+    position: relative;
+    height: 265px;
+    width: 700px;
+    font-family: 'Montserrat'
+}
+
+.texto-y-carrusel .textos img {
+    padding-bottom: 15px;
+    height: 68px;
+    width: 150px;
+}
+
+.texto-y-carrusel .textos h2 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 3.7rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    flex-direction: row;
+}
+
+.texto-y-carrusel .textos .texto {
+    margin-top: 15px;
+}
+
+.texto-y-carrusel .textos .texto h6 {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+    flex-direction: row;
+}
+
+.texto-y-carrusel .textos button {
+    margin-top: 15px;
+    position: absolute;
+    width: 179px;
+    height: 53px;
+    background: linear-gradient(92.33deg, #063a83 8.95%, #087bc2 98.37%);
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    box-shadow: 1px 1px 1px 2px rgba(255, 255, 255, 0.476);
+}
+
+.texto-y-carrusel .silderVertical {
+    position: absolute;
+}
+
+
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+    .titulo1 {
+        color: #f1eaea;
+        margin-left: 2%;
+        margin-top: 30px;
+    }
+    
+    .titulo1 h5{
+      font-size: 2rem;
+      font-family: 'Montserrat';
+      font-weight: bold;
+    }
+
+    .texto-y-carrusel {
+        display: flex
+    }
+    .texto-y-carrusel .textos {
+        background-image: url(../../../assets/img/accion.png);
+        margin-left: 2%;
+        margin-top: 3%;
+        color: #f1eaea;
+        width: 400px;
+        position: relative;
+        height: 265px;
+        width: 700px;
+        font-family: 'Montserrat'
+    }
+    
+    .texto-y-carrusel .textos img {
+        padding-bottom: 15px;
+        height: 68px;
+        width: 150px;
+    }
+    
+    .texto-y-carrusel .textos h2 {
+        margin-top: 5px;
+        margin-bottom: 0;
+        padding: 0;
+        font-family: 'Montserrat';
+        font-size: 2.5rem;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        flex-direction: row;
+    }
+    
+    .texto-y-carrusel .textos .texto {
+        margin-top: 15px;
+    }
+    
+    .texto-y-carrusel .textos .texto h6 {
+        margin-top: 5px;
+        margin-bottom: 3px;
+        padding: 0;
+        font-family: 'Montserrat';
+        font-size: 1.5rem;
+        font-weight: normal;
+        letter-spacing: 0.2rem;
+        flex-direction: row;
+    }
+    
+    .texto-y-carrusel .textos button {
+        width: 150px;
+        height: 40px;
+        background: linear-gradient(92.33deg, #063a83 8.95%, #087bc2 98.37%);
+        border-radius: 50px;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        letter-spacing: 0.4rem;
+        box-shadow: 1px 1px 1px 2px rgba(255, 255, 255, 0.476);
+    }
+}
+
+@media (max-width: 450px) { 
+    .titulo1 {
+        color: #f1eaea;
+        margin-left: 2%;
+        margin-top: 15px;
+    }
+    
+    .titulo1 h5{
+      font-size: 1.5rem;
+      font-family: 'Montserrat';
+      font-weight: bold;
+    }
+
+    .texto-y-carrusel {
+        display: flex
+    }
+    .texto-y-carrusel .textos {
+        background-image: none;
+        height: 200px;
+    }
+    .texto-y-carrusel .textos img {
+        margin-top: 30px;
+        padding-bottom: 15px;
+        height: 68px;
+        width: 150px;
+    }
+    
+    .texto-y-carrusel .textos h2 {
+       display: none;
+    }
+    
+    .texto-y-carrusel .textos .texto {
+        margin-top: 15px;
+    }
+    
+    .texto-y-carrusel .textos .texto h6 {
+       display: none;
+    }
+    
+    .texto-y-carrusel .textos button {
+        width: 120px;
+        height: 30px;
+        background: linear-gradient(92.33deg, #063a83 8.95%, #087bc2 98.37%);
+        border-radius: 50px;
+        border: none;
+        color: #fff;
+        font-size: 1.0rem;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        letter-spacing: 0.4rem;
+        box-shadow: 1px 1px 1px 2px rgba(255, 255, 255, 0.476);
+    }
+    
+}
