@@ -37,10 +37,13 @@ export class ProfileComponent {
     )
   }
   cancelUpdate(){
-this.editValue=false;
+  this.editValue=false;
   }
   onFileSelected(event:any){
     this.selectFile = event.target.files[0];
   }
-  
+
+  updateProfile(){
+    this.UserService.updateUser(this.userProfile)
+  }  
 }
